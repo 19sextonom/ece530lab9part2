@@ -1,0 +1,415 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Apr 23 15:55:18 2023
+# Process ID: 13988
+# Current directory: D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27932 D:\ECE\ECE530\XUP\embedded\2015_2_zynq_labs\ece530lab9part2\lab9p2.xpr
+# Log file: D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/vivado.log
+# Journal file: D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/sextonom/Downloads/temp/lab9p2' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 835.277 ; gain = 165.879
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+INFO: [HDL 9-2216] Analyzing Verilog file "D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/hdl/LEDcounter_scutimer_interrupt_wrapper.v" into library work [D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/hdl/LEDcounter_scutimer_interrupt_wrapper.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/hdl/LEDcounter_scutimer_interrupt.v" into library work [D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/hdl/LEDcounter_scutimer_interrupt.v:1]
+[Sun Apr 23 15:56:01 2023] Launched synth_1...
+Run output will be captured here: D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Apr 23 15:57:33 2023] Launched impl_1...
+Run output will be captured here: D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.runs/impl_1/runme.log
+file copy -force D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.runs/impl_1/LEDcounter_scutimer_interrupt_wrapper.sysdef D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper.hdf
+
+launch_sdk -workspace D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk -hwspec D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk -hwspec D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/LEDcounter_scutimer_interrupt.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - LEDs
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_100M
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <LEDcounter_scutimer_interrupt> from BD file <D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/LEDcounter_scutimer_interrupt.bd>
+close_project
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Apr 23 16:35:24 2023...
+create_project lab9UART_IP D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP -part xc7z010clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.2/data/ip'.
+set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
+add_files -norecurse {D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/IP/bbfifo_16x8.v D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/IP/ClockedOneShot.v D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/IP/uart_rx.v D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/IP/DelayLoop.v D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/IP/uart_tx.v D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/IP/BaudRateGenerator.v D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/IP/UARTmodule2023.v D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/IP/kcuart_rx.v D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/IP/BaudRateGeneratorTB.v D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/IP/kcuart_tx.v D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/IP/DebouncerWithoutLatch.v}
+import_files -force -norecurse
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+remove_files {D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/BaudRateGeneratorTB.v D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/DebouncerWithoutLatch.v}
+file delete -force D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/BaudRateGeneratorTB.v D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/DebouncerWithoutLatch.v
+remove_files D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/DelayLoop.v
+file delete -force D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/DelayLoop.v
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: UARTmodule2023
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:01:18 ; elapsed = 00:44:01 . Memory (MB): peak = 1002.555 ; gain = 795.918
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'UARTmodule2023' [D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/UARTmodule2023.v:7]
+	Parameter TRANSMITTED_BITS bound to: 4 - type: integer 
+	Parameter BAUDRATE bound to: 20'b00000100101100000000 
+	Parameter FREQUENCY bound to: 30'b000111011100110101100101000000 
+INFO: [Synth 8-638] synthesizing module 'BaudRateGenerator' [D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/BaudRateGenerator.v:9]
+INFO: [Synth 8-256] done synthesizing module 'BaudRateGenerator' (1#1) [D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/BaudRateGenerator.v:9]
+INFO: [Synth 8-638] synthesizing module 'ClockedOneShot' [D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/ClockedOneShot.v:6]
+	Parameter State0 bound to: 0 - type: integer 
+	Parameter State1 bound to: 1 - type: integer 
+	Parameter State2 bound to: 2 - type: integer 
+	Parameter State3 bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ClockedOneShot' (2#1) [D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/ClockedOneShot.v:6]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/uart_tx.v:76]
+INFO: [Synth 8-638] synthesizing module 'kcuart_tx' [D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/kcuart_tx.v:91]
+INFO: [Synth 8-638] synthesizing module 'MUXCY' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21250]
+INFO: [Synth 8-256] done synthesizing module 'MUXCY' (3#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21250]
+INFO: [Synth 8-638] synthesizing module 'XORCY' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:44873]
+INFO: [Synth 8-256] done synthesizing module 'XORCY' (4#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:44873]
+INFO: [Synth 8-638] synthesizing module 'FDRE' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3965]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (5#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3965]
+INFO: [Synth 8-638] synthesizing module 'LUT2' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+	Parameter INIT bound to: 4'b1000 
+INFO: [Synth 8-256] done synthesizing module 'LUT2' (6#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20150]
+INFO: [Synth 8-638] synthesizing module 'MULT_AND' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21239]
+INFO: [Synth 8-256] done synthesizing module 'MULT_AND' (7#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21239]
+INFO: [Synth 8-638] synthesizing module 'LUT4' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1110010011111111 
+INFO: [Synth 8-256] done synthesizing module 'LUT4' (8#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'MUXF5' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21287]
+INFO: [Synth 8-256] done synthesizing module 'MUXF5' (9#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21287]
+INFO: [Synth 8-638] synthesizing module 'MUXF6' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21324]
+INFO: [Synth 8-256] done synthesizing module 'MUXF6' (10#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:21324]
+INFO: [Synth 8-638] synthesizing module 'FDRS' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3999]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRS' (11#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3999]
+INFO: [Synth 8-638] synthesizing module 'LUT3' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b00010000 
+INFO: [Synth 8-256] done synthesizing module 'LUT3' (12#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized0' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000110010000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized0' (12#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'FDE' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3866]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDE' (13#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3866]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized1' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0001010101000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized1' (13#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized0' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b10010100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized0' (13#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-638] synthesizing module 'SRL16E' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:43310]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'SRL16E' (14#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:43310]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized2' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000110000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized2' (14#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'FD' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3724]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FD' (15#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3724]
+INFO: [Synth 8-256] done synthesizing module 'kcuart_tx' (16#1) [D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/kcuart_tx.v:91]
+INFO: [Synth 8-638] synthesizing module 'bbfifo_16x8' [D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/bbfifo_16x8.v:88]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized3' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0110011000000110 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized3' (16#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized4' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0110011000000110 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized4' (16#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized5' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0110011000000110 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized5' (16#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized6' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0110011000000110 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized6' (16#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized7' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000000000001 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized7' (16#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized8' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized8' (16#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized9' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b1011111110100000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized9' (16#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'FDR' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3952]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDR' (17#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:3952]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized1' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b11000100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized1' (17#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-256] done synthesizing module 'bbfifo_16x8' (18#1) [D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/bbfifo_16x8.v:88]
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (19#1) [D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/uart_tx.v:76]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/uart_rx.v:76]
+INFO: [Synth 8-638] synthesizing module 'kcuart_rx' [D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/kcuart_rx.v:88]
+INFO: [Synth 8-638] synthesizing module 'LUT4__parameterized10' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+	Parameter INIT bound to: 16'b0000000001000000 
+INFO: [Synth 8-256] done synthesizing module 'LUT4__parameterized10' (19#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20227]
+INFO: [Synth 8-638] synthesizing module 'LUT3__parameterized2' [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+	Parameter INIT bound to: 8'b01010100 
+INFO: [Synth 8-256] done synthesizing module 'LUT3__parameterized2' (19#1) [D:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20187]
+INFO: [Synth 8-256] done synthesizing module 'kcuart_rx' (20#1) [D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/kcuart_rx.v:88]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (21#1) [D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/uart_rx.v:76]
+INFO: [Synth 8-256] done synthesizing module 'UARTmodule2023' (22#1) [D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/UARTmodule2023.v:7]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:19 ; elapsed = 00:44:02 . Memory (MB): peak = 1002.555 ; gain = 795.918
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:19 ; elapsed = 00:44:02 . Memory (MB): peak = 1002.555 ; gain = 795.918
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 59 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 10 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 11 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 42 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 3 instances
+  FD => FDRE: 4 instances
+  FDE => FDRE: 26 instances
+  FDR => FDRE: 2 instances
+  FDRS => FDRS (FDRE, LUT2, VCC): 1 instances
+  MULT_AND => LUT2: 3 instances
+  MUXF5 => LUT3: 2 instances
+  MUXF6 => LUT3: 1 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:28 ; elapsed = 00:44:08 . Memory (MB): peak = 1270.203 ; gain = 1063.566
+80 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1270.203 ; gain = 267.648
+ipx::package_project -root_dir D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP -vendor xilinx.com -library user -taxonomy /UserIP -generated_files
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'reset' as interface 'reset'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clock' as interface 'clock'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clock': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  d:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP'.
+close_project
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Apr 23 16:43:31 2023...
+open_project D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.2/data/ip'.
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP'.
+open_bd_design {D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/LEDcounter_scutimer_interrupt.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - LEDs
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_100M
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <LEDcounter_scutimer_interrupt> from BD file <D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/LEDcounter_scutimer_interrupt.bd>
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:UARTmodule2023:1.0 UARTmodule2023_0
+endgroup
+set_property location {2 845 297} [get_bd_cells UARTmodule2023_0]
+delete_bd_objs [get_bd_cells UARTmodule2023_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:UARTmodule2023:1.0 UARTmodule2023_0
+endgroup
+set_property location {3 869 78} [get_bd_cells UARTmodule2023_0]
+ipx::edit_ip_in_project -upgrade true -name UARTmodule2023_v1_0_project -directory D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.tmp/UARTmodule2023_v1_0_project d:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/ece/ece530/xup/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.tmp/uartmodule2023_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+ipx::unload_core d:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/component.xml
+close_project
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source d:/ece/ece530/xup/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.tmp/uartmodule2023_v1_0_project/UARTmodule2023_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Apr 23 16:48:42 2023...
+ipx::edit_ip_in_project -upgrade true -name UARTmodule2023_v1_0_project -directory D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.tmp/UARTmodule2023_v1_0_project d:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP/lab9UART_IP.srcs/sources_1/imports/IP/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/ece/ece530/xup/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.tmp/uartmodule2023_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source d:/ece/ece530/xup/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.tmp/uartmodule2023_v1_0_project/UARTmodule2023_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Apr 23 17:02:30 2023...
+update_ip_catalog -rebuild -repo_path d:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP'
+report_ip_status -name ip_status 
+export_ip_user_files -of_objects [get_ips  LEDcounter_scutimer_interrupt_UARTmodule2023_0_1] -no_script -reset -quiet
+upgrade_ip -vlnv xilinx.com:user:UARTmodule2023:1.0 [get_ips  LEDcounter_scutimer_interrupt_UARTmodule2023_0_1] -log ip_upgrade.log
+Upgrading 'D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/LEDcounter_scutimer_interrupt.bd'
+INFO: [IP_Flow 19-3422] Upgraded LEDcounter_scutimer_interrupt_UARTmodule2023_0_1 (UARTmodule2023_v1_0 1.0) from revision 2 to revision 3
+Wrote  : <D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/LEDcounter_scutimer_interrupt.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/ip_upgrade.log'.
+set_property -dict [list CONFIG.FREQUENCY {0x5F5E100}] [get_bd_cells UARTmodule2023_0]
+report_ip_status -name ip_status 
+startgroup
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP1 {0}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property location {3 1195 97} [get_bd_cells axi_gpio_0]
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {8} CONFIG.C_GPIO2_WIDTH {1} CONFIG.C_IS_DUAL {1} CONFIG.C_ALL_OUTPUTS {1} CONFIG.C_ALL_OUTPUTS_2 {1}] [get_bd_cells axi_gpio_0]
+endgroup
+set_property location {2 861 312} [get_bd_cells axi_gpio_0]
+set_property location {3 1166 165} [get_bd_cells UARTmodule2023_0]
+set_property location {2 838 151} [get_bd_cells axi_gpio_0]
+connect_bd_net [get_bd_pins UARTmodule2023_0/write_to_uart] [get_bd_pins axi_gpio_0/gpio2_io_o]
+WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_0/gpio2_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO2
+connect_bd_net [get_bd_pins axi_gpio_0/gpio_io_o] [get_bd_pins UARTmodule2023_0/tx_data]
+WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_0/gpio_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_gpio_0/S_AXI]
+</axi_gpio_0/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41210000 [ 64K ]>
+report_ip_status -name ip_status 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1
+endgroup
+set_property location {3.5 1479 174} [get_bd_cells axi_gpio_1]
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {1} CONFIG.C_ALL_INPUTS {1}] [get_bd_cells axi_gpio_1]
+endgroup
+connect_bd_net [get_bd_pins UARTmodule2023_0/tx_full] [get_bd_pins axi_gpio_1/gpio_io_i]
+WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_1/gpio_io_i is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_gpio_1/S_AXI]
+</axi_gpio_1/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x41220000 [ 64K ]>
+report_ip_status -name ip_status 
+startgroup
+create_bd_port -dir O tx
+connect_bd_net [get_bd_pins /UARTmodule2023_0/tx] [get_bd_ports tx]
+endgroup
+connect_bd_net [get_bd_pins UARTmodule2023_0/clock] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins UARTmodule2023_0/reset] [get_bd_pins processing_system7_0/FCLK_RESET0_N]
+save_bd_design
+Wrote  : <D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/LEDcounter_scutimer_interrupt.bd> 
+validate_bd_design
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [BD 41-1347] Reset pin /UARTmodule2023_0/reset (associated clock /UARTmodule2023_0/clock) is connected to asynchronous reset source /processing_system7_0/FCLK_RESET0_N.
+This may prevent design from meeting timing. Instead it should be connected to reset source /rst_processing_system7_0_100M/peripheral_aresetn.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. 
+Please check your design and connect them if needed: 
+/UARTmodule2023_0/rx
+/UARTmodule2023_0/read_from_uart
+
+regenerate_bd_layout
+remove_files D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/hdl/LEDcounter_scutimer_interrupt_wrapper.v
+file delete -force D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/hdl/LEDcounter_scutimer_interrupt_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+generate_target all [get_files  D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/LEDcounter_scutimer_interrupt.bd]
+INFO: [BD 41-1662] The design 'LEDcounter_scutimer_interrupt.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. 
+Please check your design and connect them if needed: 
+/UARTmodule2023_0/rx
+/UARTmodule2023_0/read_from_uart
+
+Verilog Output written to : D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/hdl/LEDcounter_scutimer_interrupt.v
+Verilog Output written to : D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/hdl/LEDcounter_scutimer_interrupt_wrapper.v
+Wrote  : <D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/LEDcounter_scutimer_interrupt.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block LEDs .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block UARTmodule2023_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/hw_handoff/LEDcounter_scutimer_interrupt.hwh
+Generated Block Design Tcl file D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/hw_handoff/LEDcounter_scutimer_interrupt_bd.tcl
+Generated Hardware Definition File D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/hdl/LEDcounter_scutimer_interrupt.hwdef
+generate_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1450.227 ; gain = 24.723
+export_ip_user_files -of_objects [get_files D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/LEDcounter_scutimer_interrupt.bd] -no_script -force -quiet
+export_simulation -of_objects [get_files D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/LEDcounter_scutimer_interrupt.bd] -directory D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.ip_user_files/sim_scripts -ip_user_files_dir D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.ip_user_files -ipstatic_source_dir D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.ip_user_files/ipstatic -force -quiet
+make_wrapper -files [get_files D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/LEDcounter_scutimer_interrupt.bd] -top
+add_files -norecurse D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/hdl/LEDcounter_scutimer_interrupt_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+INFO: [HDL 9-2216] Analyzing Verilog file "D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/hdl/LEDcounter_scutimer_interrupt_wrapper.v" into library work [D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/hdl/LEDcounter_scutimer_interrupt_wrapper.v:1]
+[Sun Apr 23 17:22:49 2023] Launched synth_1...
+Run output will be captured here: D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.runs/synth_1/runme.log

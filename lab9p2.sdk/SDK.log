@@ -1,0 +1,22 @@
+21:09:22 INFO  : Launching XSDB server: xsdb.bat -interactive C:\xup\LEDcounter_scutimer_interrupt\LEDcounter_scutimer_interrupt.sdk\temp_xsdb_launch_script.tcl
+21:09:23 INFO  : XSDB server has started successfully.
+21:09:23 INFO  : Processing command line option -hwspec C:/xup/LEDcounter_scutimer_interrupt/LEDcounter_scutimer_interrupt.sdk/LEDcounter_scutimer_interrupt_wrapper.hdf.
+21:12:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:12:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:12:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279758477A" && level==0} -index 1' command is executed.
+21:12:23 INFO  : FPGA configured successfully with bitstream "C:/xup/LEDcounter_scutimer_interrupt/LEDcounter_scutimer_interrupt.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/LEDcounter_scutimer_interrupt_wrapper.bit"
+21:12:36 INFO  : ps7_init is completed.
+21:12:36 INFO  : ps7_post_config is completed.
+21:12:36 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:13:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:22:03 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+23:44:07 INFO  : Launching XSDB server: xsdb.bat -interactive C:\xup\LEDcounter_scutimer_interrupt\LEDcounter_scutimer_interrupt.sdk\temp_xsdb_launch_script.tcl
+23:44:09 INFO  : XSDB server has started successfully.
+23:44:10 INFO  : Processing command line option -hwspec C:/xup/LEDcounter_scutimer_interrupt/LEDcounter_scutimer_interrupt.sdk/LEDcounter_scutimer_interrupt_wrapper.hdf.
+23:44:10 INFO  : Checking for hwspec changes in the project LEDcounter_scutimer_interrupt_wrapper_hw_platform_0.
+00:03:16 INFO  : Processor reset is completed for ps7_cortexa9_0
+00:03:25 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:00:26 INFO  : Launching XSDB server: xsdb.bat -interactive D:\ECE\ECE530\XUP\embedded\2015_2_zynq_labs\ece530lab9part2\lab9p2.sdk\temp_xsdb_launch_script.tcl
+16:00:28 INFO  : XSDB server has started successfully.
+16:00:28 INFO  : Processing command line option -hwspec D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper.hdf.
+16:10:21 ERROR : The Hardware Project referenced by this BSP (ece530lab9part2_bsp) was not found in this workspace. As a result, this BSP will not build properly. To fix this error, please import the associated hardware project or recreate a new BSP targeting an existing hardware platform.
