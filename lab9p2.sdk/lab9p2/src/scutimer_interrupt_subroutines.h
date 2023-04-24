@@ -28,6 +28,8 @@ XScuTimer TimerInstance;    /* Cortex A9 Scu Private Timer Instance */
 XScuGic GICinstance;        /* GIC Interrupt Controller Instance */
 XGpio LEDInst;    //LED instance
 
+extern volatile int timerCount;
+
 //Function prototypes
 int SetupScuTimer(XScuTimer *TimerInstance, u16 timer_ID, unsigned int load_value, u16 timer_interrupt_id);
 
@@ -36,3 +38,5 @@ int SetupGIC(XScuGic *IntcInstancePtr, u16 gic_id, XScuTimer *TimerInstancePtr, 
 void TimerIntrHandler(void *CallBackRef);
 
 int SetupLEDs(XGpio *LEDdevice, int DeviceID);
+
+int initTimer();

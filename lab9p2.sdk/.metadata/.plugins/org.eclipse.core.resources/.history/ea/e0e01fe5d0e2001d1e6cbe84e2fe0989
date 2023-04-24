@@ -203,17 +203,17 @@ void initTempSensors() {
 
 int initPlUart() {
     if (XGpio_Initialize(&plUart, XPAR_AXI_GPIO_0_DEVICE_ID) != XST_SUCCESS) {
-        xil_printf("plUart init failed\r\n");
+        printf("plUart init failed\r\n");
         return XST_FAILURE;
     }
 
     if (XGpio_Initialize(&plUartTxFull, XPAR_AXI_GPIO_1_DEVICE_ID) != XST_SUCCESS) {
-        xil_printf("plUartTxFull init failed\r\n");
+        printf("plUartTxFull init failed\r\n");
         return XST_FAILURE;
     }
 
     XGpio_SetDataDirection(&plUart, 1, 0x00);
-    XGpio_SetDataDirection(&plUartTxFull, 1, 0x01);
+    XGpio_SetDataDirection(&plUartTxFull, 0, 0x00);
 
     return XST_SUCCESS;
 }
@@ -260,14 +260,14 @@ int main() {
         snprintf(
                 printBuffer,
                 STRING_BUFFER_SIZE,
-                "TMP101 on EMIO JF     =  %8.4f degrees\r\n"
-                "TMP101 on SelectIO JB =  %8.4f degrees\r\n\r\n",
+                "PS Temperature: %8.4f degrees\r\n"
+                "PL Temperature: %8.4f degrees\r\n",
                 tempPs,
                 tempPl
         );
 
         printf("%s", printBuffer);
-        printMessageToPlUart(printBuffer);
+        //printMessageToPlUart(printBuffer);
 
 
         while (processedTimerCount == timerCount) {

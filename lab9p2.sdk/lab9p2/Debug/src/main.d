@@ -12,7 +12,17 @@ src/main.o src/main.o: ../src/main.c \
  ../../lab9p2_bsp/ps7_cortexa9_0/include/xpseudo_asm_gcc.h \
  ../../lab9p2_bsp/ps7_cortexa9_0/include/xil_printf.h \
  ../../lab9p2_bsp/ps7_cortexa9_0/include/xparameters.h \
- ../../lab9p2_bsp/ps7_cortexa9_0/include/xplatform_info.h
+ ../../lab9p2_bsp/ps7_cortexa9_0/include/xplatform_info.h \
+ ../src/scutimer_interrupt_subroutines.h \
+ ../../lab9p2_bsp/ps7_cortexa9_0/include/xscutimer.h \
+ ../../lab9p2_bsp/ps7_cortexa9_0/include/xscutimer_hw.h \
+ ../../lab9p2_bsp/ps7_cortexa9_0/include/xscugic.h \
+ ../../lab9p2_bsp/ps7_cortexa9_0/include/xscugic_hw.h \
+ ../../lab9p2_bsp/ps7_cortexa9_0/include/xil_exception.h \
+ ../../lab9p2_bsp/ps7_cortexa9_0/include/xil_exception.h \
+ ../../lab9p2_bsp/ps7_cortexa9_0/include/xil_printf.h \
+ ../../lab9p2_bsp/ps7_cortexa9_0/include/xgpio.h \
+ ../../lab9p2_bsp/ps7_cortexa9_0/include/xgpio_l.h
 
 ../../lab9p2_bsp/ps7_cortexa9_0/include/xparameters.h:
 
@@ -41,3 +51,23 @@ src/main.o src/main.o: ../src/main.c \
 ../../lab9p2_bsp/ps7_cortexa9_0/include/xparameters.h:
 
 ../../lab9p2_bsp/ps7_cortexa9_0/include/xplatform_info.h:
+
+../src/scutimer_interrupt_subroutines.h:
+
+../../lab9p2_bsp/ps7_cortexa9_0/include/xscutimer.h:
+
+../../lab9p2_bsp/ps7_cortexa9_0/include/xscutimer_hw.h:
+
+../../lab9p2_bsp/ps7_cortexa9_0/include/xscugic.h:
+
+../../lab9p2_bsp/ps7_cortexa9_0/include/xscugic_hw.h:
+
+../../lab9p2_bsp/ps7_cortexa9_0/include/xil_exception.h:
+
+../../lab9p2_bsp/ps7_cortexa9_0/include/xil_exception.h:
+
+../../lab9p2_bsp/ps7_cortexa9_0/include/xil_printf.h:
+
+../../lab9p2_bsp/ps7_cortexa9_0/include/xgpio.h:
+
+../../lab9p2_bsp/ps7_cortexa9_0/include/xgpio_l.h:

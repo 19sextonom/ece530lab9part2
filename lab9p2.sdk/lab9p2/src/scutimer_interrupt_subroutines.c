@@ -9,52 +9,41 @@
 
 #include "scutimer_interrupt_subroutines.h"
 
-#define ENDCOUNT 200
-volatile int TimerCount = 0;
+volatile int timerCount = 0;
 
-int interrupt_main(void) {
-    int Status;
+int initTimer() {
+    if (SetupLEDs(&LEDInst, LEDS_DEVICE_ID) != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
 
-    printf("SCU Timer Interrupt Counter Example\r\n");
-    // Initialize LEDs
-    Status = SetupLEDs(&LEDInst, LEDS_DEVICE_ID);
-    if (Status != XST_SUCCESS) return XST_FAILURE;
-
-    Status = SetupScuTimer(&TimerInstance, TIMER_DEVICE_ID, TIMER_LOAD_VALUE, TIMER_IRPT_INTR);
-    if (Status != XST_SUCCESS) {
+    if (SetupScuTimer(&TimerInstance, TIMER_DEVICE_ID, TIMER_LOAD_VALUE, TIMER_IRPT_INTR) != XST_SUCCESS) {
         xil_printf("SCU Timer Enable Failed\r\n");
         return XST_FAILURE;
     }
 
-    Status = SetupGIC(&GICinstance, GIC_DEVICE_ID,
-                      &TimerInstance, TIMER_IRPT_INTR);
-    if (Status != XST_SUCCESS) {
+    if (XST_SUCCESS != SetupGIC(
+            &GICinstance,
+            GIC_DEVICE_ID,
+            &TimerInstance,
+            TIMER_IRPT_INTR
+    )) {
         xil_printf("SCU Timer Interrupt Example Test Failed\r\n");
         return XST_FAILURE;
     }
 
-    while (1) {
-        if (TimerCount == ENDCOUNT) {
-            XScuTimer_Stop(&TimerInstance);
-            break;
-        }
-    }
-// Disconnect and disable the interrupt for the Timer.
-    XScuGic_Disconnect(&GICinstance, TIMER_IRPT_INTR);
-
-    xil_printf("\r\nSCU Timer Interrupt counter Example Is Successful!\r\n");
+    xil_printf("\r\nSCU Timer interrupt initialized successfully\r\n");
     return XST_SUCCESS;
-}    //end main()
+}
 
 int SetupLEDs(XGpio *LEDdevice, int DeviceID) {
-    int status;
-    // Initialize LEDs
-    status = XGpio_Initialize(LEDdevice, DeviceID);
-    if (status != XST_SUCCESS) return XST_FAILURE;
-    // Set LEDs direction to outputs
+    if (XGpio_Initialize(LEDdevice, DeviceID) != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
     XGpio_SetDataDirection(&LEDInst, 1, 0x00);
+
     return XST_SUCCESS;
-} //end SetupLEDs()
+}
 
 int SetupScuTimer(XScuTimer *Timer, u16 timer_ID, unsigned int Load_value, u16 timer_interrupt_id) {
     int Status;
@@ -81,7 +70,7 @@ int SetupScuTimer(XScuTimer *Timer, u16 timer_ID, unsigned int Load_value, u16 t
 //Start the timer counter and then wait for it to timeout a number of times.
     XScuTimer_Start(Timer);
     return XST_SUCCESS;
-} //end SetupScuTimer()
+}
 
 /*****************************************************************************/
 /*
@@ -128,7 +117,7 @@ int SetupGIC(XScuGic *IntcInstancePtr, u16 gic_id, XScuTimer *TimerInstancePtr, 
     Xil_ExceptionEnable();
 
     return XST_SUCCESS;
-}    //end SetupGIC()
+}
 
 /***************************************************************/
 /*
@@ -156,9 +145,7 @@ void TimerIntrHandler(void *CallBackRef) {
      */
     if (XScuTimer_IsExpired(TimerInstancePtr)) {
         XScuTimer_ClearInterruptStatus(TimerInstancePtr);
-        TimerCount = TimerCount + 1;
-        XGpio_DiscreteWrite(&LEDInst, 1, TimerCount);
-        xil_printf("\r\nTimerCount = %d", TimerCount);
+        timerCount = timerCount + 1;
+        XGpio_DiscreteWrite(&LEDInst, 1, timerCount);
     }
-}    //end TimerIntrHandler()
-
+}

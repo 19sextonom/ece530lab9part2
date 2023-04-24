@@ -7,3 +7,88 @@
 14:04:11 INFO  : FPGA configured successfully with bitstream "Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/LEDcounter_scutimer_interrupt_wrapper.bit"
 14:04:12 INFO  : ps7_init is completed.
 14:04:12 INFO  : ps7_post_config is completed.
+14:10:23 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:10:26 INFO  : System reset is completed.
+14:10:27 INFO  : FPGA configured successfully with bitstream "Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/LEDcounter_scutimer_interrupt_wrapper.bit"
+14:10:30 INFO  : ps7_init is completed.
+14:10:30 INFO  : ps7_post_config is completed.
+14:12:00 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:12:02 INFO  : System reset is completed.
+14:12:03 INFO  : FPGA configured successfully with bitstream "Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/LEDcounter_scutimer_interrupt_wrapper.bit"
+14:12:05 INFO  : ps7_init is completed.
+14:12:05 INFO  : ps7_post_config is completed.
+14:13:16 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:13:19 INFO  : System reset is completed.
+14:13:21 INFO  : FPGA configured successfully with bitstream "Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/LEDcounter_scutimer_interrupt_wrapper.bit"
+14:13:23 INFO  : ps7_init is completed.
+14:13:23 INFO  : ps7_post_config is completed.
+14:20:15 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:20:18 INFO  : System reset is completed.
+14:20:19 INFO  : FPGA configured successfully with bitstream "Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/LEDcounter_scutimer_interrupt_wrapper.bit"
+14:20:21 INFO  : ps7_init is completed.
+14:20:21 INFO  : ps7_post_config is completed.
+14:25:37 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:25:40 INFO  : System reset is completed.
+14:25:42 INFO  : FPGA configured successfully with bitstream "Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/LEDcounter_scutimer_interrupt_wrapper.bit"
+14:25:43 INFO  : ps7_init is completed.
+14:25:43 INFO  : ps7_post_config is completed.
+14:26:15 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:26:19 INFO  : System reset is completed.
+14:26:20 INFO  : FPGA configured successfully with bitstream "Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/LEDcounter_scutimer_interrupt_wrapper.bit"
+14:26:22 INFO  : ps7_init is completed.
+14:26:22 INFO  : ps7_post_config is completed.
+14:27:28 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:29:10 INFO  : System reset is completed.
+14:29:12 INFO  : FPGA configured successfully with bitstream "Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/LEDcounter_scutimer_interrupt_wrapper.bit"
+14:29:14 INFO  : ps7_init is completed.
+14:29:14 INFO  : ps7_post_config is completed.
+14:36:56 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:36:59 INFO  : System reset is completed.
+14:37:00 INFO  : FPGA configured successfully with bitstream "Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/LEDcounter_scutimer_interrupt_wrapper.bit"
+14:37:02 INFO  : ps7_init is completed.
+14:37:02 INFO  : ps7_post_config is completed.
+14:48:50 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:48:53 INFO  : System reset is completed.
+14:48:54 INFO  : FPGA configured successfully with bitstream "Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/LEDcounter_scutimer_interrupt_wrapper.bit"
+14:48:56 INFO  : ps7_init is completed.
+14:48:56 INFO  : ps7_post_config is completed.
+14:49:39 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:49:40 INFO  : System reset is completed.
+14:49:42 INFO  : FPGA configured successfully with bitstream "Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/LEDcounter_scutimer_interrupt_wrapper.bit"
+14:49:44 INFO  : ps7_init is completed.
+14:49:44 INFO  : ps7_post_config is completed.
+14:50:40 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:50:42 INFO  : System reset is completed.
+14:50:44 INFO  : FPGA configured successfully with bitstream "Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/LEDcounter_scutimer_interrupt_wrapper.bit"
+14:50:46 INFO  : ps7_init is completed.
+14:50:46 INFO  : ps7_post_config is completed.
+14:51:04 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:51:06 INFO  : System reset is completed.
+14:51:11 INFO  : FPGA configured successfully with bitstream "Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/LEDcounter_scutimer_interrupt_wrapper.bit"
+14:51:13 INFO  : ps7_init is completed.
+14:51:13 INFO  : ps7_post_config is completed.
+14:52:39 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:52:43 INFO  : System reset is completed.
+14:52:45 INFO  : FPGA configured successfully with bitstream "Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/LEDcounter_scutimer_interrupt_wrapper.bit"
+14:52:47 INFO  : ps7_init is completed.
+14:52:47 INFO  : ps7_post_config is completed.
+14:53:46 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:53:50 INFO  : System reset is completed.
+14:53:51 INFO  : FPGA configured successfully with bitstream "Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/LEDcounter_scutimer_interrupt_wrapper.bit"
+14:53:53 INFO  : ps7_init is completed.
+14:53:53 INFO  : ps7_post_config is completed.
+14:55:18 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:55:22 INFO  : System reset is completed.
+14:55:24 INFO  : FPGA configured successfully with bitstream "Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/LEDcounter_scutimer_interrupt_wrapper.bit"
+14:55:25 INFO  : ps7_init is completed.
+14:55:26 INFO  : ps7_post_config is completed.
+15:00:07 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:01:27 INFO  : System reset is completed.
+15:01:29 INFO  : FPGA configured successfully with bitstream "Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/LEDcounter_scutimer_interrupt_wrapper.bit"
+15:01:31 INFO  : ps7_init is completed.
+15:01:31 INFO  : ps7_post_config is completed.
+15:01:35 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:01:37 INFO  : System reset is completed.
+15:01:40 INFO  : FPGA configured successfully with bitstream "Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/LEDcounter_scutimer_interrupt_wrapper.bit"
+15:01:41 INFO  : ps7_init is completed.
+15:01:41 INFO  : ps7_post_config is completed.

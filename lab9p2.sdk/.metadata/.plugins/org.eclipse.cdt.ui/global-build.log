@@ -107,3 +107,741 @@ make pre-build main-build
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
+14:10:18 **** Incremental Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/scutimer_interrupt_subroutines.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/scutimer_interrupt_subroutines.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/scutimer_interrupt_subroutines.d" -MT"src/scutimer_interrupt_subroutines.o" -o "src/scutimer_interrupt_subroutines.o" "../src/scutimer_interrupt_subroutines.c"
+'Finished building: ../src/scutimer_interrupt_subroutines.c'
+' '
+'Building target: lab9p2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab9p2_bsp/ps7_cortexa9_0/lib -o "lab9p2.elf"  ./src/main.o ./src/scutimer_interrupt_subroutines.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab9p2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab9p2.elf  |tee "lab9p2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  88764	   4240	  23516	 116520	  1c728	lab9p2.elf
+'Finished building: lab9p2.elf.size'
+' '
+14:11:47 **** Auto Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: lab9p2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab9p2_bsp/ps7_cortexa9_0/lib -o "lab9p2.elf"  ./src/main.o ./src/scutimer_interrupt_subroutines.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab9p2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab9p2.elf  |tee "lab9p2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  88764	   4240	  23516	 116520	  1c728	lab9p2.elf
+'Finished building: lab9p2.elf.size'
+' '
+14:11:58 **** Incremental Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:13:13 **** Incremental Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/scutimer_interrupt_subroutines.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/scutimer_interrupt_subroutines.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/scutimer_interrupt_subroutines.d" -MT"src/scutimer_interrupt_subroutines.o" -o "src/scutimer_interrupt_subroutines.o" "../src/scutimer_interrupt_subroutines.c"
+'Finished building: ../src/scutimer_interrupt_subroutines.c'
+' '
+'Building target: lab9p2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab9p2_bsp/ps7_cortexa9_0/lib -o "lab9p2.elf"  ./src/main.o ./src/scutimer_interrupt_subroutines.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab9p2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab9p2.elf  |tee "lab9p2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  88700	   4240	  23516	 116456	  1c6e8	lab9p2.elf
+'Finished building: lab9p2.elf.size'
+' '
+14:18:57 **** Auto Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:211:5: warning: implicit declaration of function 'initTimer' [-Wimplicit-function-declaration]
+     initTimer();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/scutimer_interrupt_subroutines.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/scutimer_interrupt_subroutines.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/scutimer_interrupt_subroutines.d" -MT"src/scutimer_interrupt_subroutines.o" -o "src/scutimer_interrupt_subroutines.o" "../src/scutimer_interrupt_subroutines.c"
+'Finished building: ../src/scutimer_interrupt_subroutines.c'
+' '
+'Building target: lab9p2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab9p2_bsp/ps7_cortexa9_0/lib -o "lab9p2.elf"  ./src/main.o ./src/scutimer_interrupt_subroutines.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab9p2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab9p2.elf  |tee "lab9p2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  88588	   4240	  23516	 116344	  1c678	lab9p2.elf
+'Finished building: lab9p2.elf.size'
+' '
+14:20:12 **** Incremental Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/scutimer_interrupt_subroutines.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/scutimer_interrupt_subroutines.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/scutimer_interrupt_subroutines.d" -MT"src/scutimer_interrupt_subroutines.o" -o "src/scutimer_interrupt_subroutines.o" "../src/scutimer_interrupt_subroutines.c"
+'Finished building: ../src/scutimer_interrupt_subroutines.c'
+' '
+'Building target: lab9p2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab9p2_bsp/ps7_cortexa9_0/lib -o "lab9p2.elf"  ./src/main.o ./src/scutimer_interrupt_subroutines.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab9p2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab9p2.elf  |tee "lab9p2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  88572	   4240	  23516	 116328	  1c668	lab9p2.elf
+'Finished building: lab9p2.elf.size'
+' '
+14:23:39 **** Auto Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:212:5: warning: implicit declaration of function 'initTimer' [-Wimplicit-function-declaration]
+     initTimer();
+     ^
+../src/main.c:208:18: warning: unused variable 'loopCount' [-Wunused-variable]
+     unsigned int loopCount;
+                  ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/scutimer_interrupt_subroutines.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/scutimer_interrupt_subroutines.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/scutimer_interrupt_subroutines.d" -MT"src/scutimer_interrupt_subroutines.o" -o "src/scutimer_interrupt_subroutines.o" "../src/scutimer_interrupt_subroutines.c"
+'Finished building: ../src/scutimer_interrupt_subroutines.c'
+' '
+'Building target: lab9p2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab9p2_bsp/ps7_cortexa9_0/lib -o "lab9p2.elf"  ./src/main.o ./src/scutimer_interrupt_subroutines.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/scutimer_interrupt_subroutines.o: In function `initTimer':
+Z:\Development\ece530\xup\2015_2_zynq_labs\ece530lab9part2\lab9p2.sdk\lab9p2\Debug/../src/scutimer_interrupt_subroutines.c:12: multiple definition of `TimerCount'
+./src/main.o:Z:\Development\ece530\xup\2015_2_zynq_labs\ece530lab9part2\lab9p2.sdk\lab9p2\Debug/../src/main.c:61: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [lab9p2.elf] Error 1
+14:25:21 **** Auto Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:212:5: warning: implicit declaration of function 'initTimer' [-Wimplicit-function-declaration]
+     initTimer();
+     ^
+../src/main.c:208:18: warning: unused variable 'loopCount' [-Wunused-variable]
+     unsigned int loopCount;
+                  ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/scutimer_interrupt_subroutines.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/scutimer_interrupt_subroutines.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/scutimer_interrupt_subroutines.d" -MT"src/scutimer_interrupt_subroutines.o" -o "src/scutimer_interrupt_subroutines.o" "../src/scutimer_interrupt_subroutines.c"
+'Finished building: ../src/scutimer_interrupt_subroutines.c'
+' '
+'Building target: lab9p2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab9p2_bsp/ps7_cortexa9_0/lib -o "lab9p2.elf"  ./src/main.o ./src/scutimer_interrupt_subroutines.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab9p2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab9p2.elf  |tee "lab9p2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  88572	   4240	  23516	 116328	  1c668	lab9p2.elf
+'Finished building: lab9p2.elf.size'
+' '
+14:25:35 **** Incremental Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:26:09 **** Incremental Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:212:5: warning: implicit declaration of function 'initTimer' [-Wimplicit-function-declaration]
+     initTimer();
+     ^
+../src/main.c:208:18: warning: unused variable 'loopCount' [-Wunused-variable]
+     unsigned int loopCount;
+                  ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/scutimer_interrupt_subroutines.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/scutimer_interrupt_subroutines.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/scutimer_interrupt_subroutines.d" -MT"src/scutimer_interrupt_subroutines.o" -o "src/scutimer_interrupt_subroutines.o" "../src/scutimer_interrupt_subroutines.c"
+'Finished building: ../src/scutimer_interrupt_subroutines.c'
+' '
+'Building target: lab9p2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab9p2_bsp/ps7_cortexa9_0/lib -o "lab9p2.elf"  ./src/main.o ./src/scutimer_interrupt_subroutines.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab9p2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab9p2.elf  |tee "lab9p2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  88572	   4240	  23516	 116328	  1c668	lab9p2.elf
+'Finished building: lab9p2.elf.size'
+' '
+14:27:24 **** Incremental Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:212:5: warning: implicit declaration of function 'initTimer' [-Wimplicit-function-declaration]
+     initTimer();
+     ^
+../src/main.c:208:18: warning: unused variable 'loopCount' [-Wunused-variable]
+     unsigned int loopCount;
+                  ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/scutimer_interrupt_subroutines.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/scutimer_interrupt_subroutines.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/scutimer_interrupt_subroutines.d" -MT"src/scutimer_interrupt_subroutines.o" -o "src/scutimer_interrupt_subroutines.o" "../src/scutimer_interrupt_subroutines.c"
+'Finished building: ../src/scutimer_interrupt_subroutines.c'
+' '
+'Building target: lab9p2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab9p2_bsp/ps7_cortexa9_0/lib -o "lab9p2.elf"  ./src/main.o ./src/scutimer_interrupt_subroutines.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab9p2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab9p2.elf  |tee "lab9p2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  88572	   4240	  23516	 116328	  1c668	lab9p2.elf
+'Finished building: lab9p2.elf.size'
+' '
+14:36:48 **** Auto Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:208:5: warning: implicit declaration of function 'initTimer' [-Wimplicit-function-declaration]
+     initTimer();
+     ^
+../src/main.c:204:18: warning: unused variable 'loopCount' [-Wunused-variable]
+     unsigned int loopCount;
+                  ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/scutimer_interrupt_subroutines.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/scutimer_interrupt_subroutines.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/scutimer_interrupt_subroutines.d" -MT"src/scutimer_interrupt_subroutines.o" -o "src/scutimer_interrupt_subroutines.o" "../src/scutimer_interrupt_subroutines.c"
+'Finished building: ../src/scutimer_interrupt_subroutines.c'
+' '
+'Building target: lab9p2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab9p2_bsp/ps7_cortexa9_0/lib -o "lab9p2.elf"  ./src/main.o ./src/scutimer_interrupt_subroutines.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab9p2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab9p2.elf  |tee "lab9p2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 105436	   4240	  23516	 133192	  20848	lab9p2.elf
+'Finished building: lab9p2.elf.size'
+' '
+14:36:55 **** Incremental Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:43:47 **** Auto Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'initPlUart':
+../src/main.c:205:34: error: 'DeviceID' undeclared (first use in this function)
+     if (XGpio_Initialize(plUart, DeviceID) != XST_SUCCESS) {
+                                  ^
+../src/main.c:205:34: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:205:9: error: incompatible type for argument 1 of 'XGpio_Initialize'
+     if (XGpio_Initialize(plUart, DeviceID) != XST_SUCCESS) {
+         ^
+In file included from ../src/scutimer_interrupt_subroutines.h:14:0,
+                 from ../src/main.c:10:
+../../lab9p2_bsp/ps7_cortexa9_0/include/xgpio.h:161:5: note: expected 'struct XGpio *' but argument is of type 'XGpio'
+ int XGpio_Initialize(XGpio *InstancePtr, u16 DeviceId);
+     ^
+../src/main.c:207:9: warning: 'return' with a value, in function returning void
+         return XST_FAILURE;
+         ^
+../src/main.c:210:9: error: incompatible type for argument 1 of 'XGpio_Initialize'
+     if (XGpio_Initialize(plUartTxFull, DeviceID) != XST_SUCCESS) {
+         ^
+In file included from ../src/scutimer_interrupt_subroutines.h:14:0,
+                 from ../src/main.c:10:
+../../lab9p2_bsp/ps7_cortexa9_0/include/xgpio.h:161:5: note: expected 'struct XGpio *' but argument is of type 'XGpio'
+ int XGpio_Initialize(XGpio *InstancePtr, u16 DeviceId);
+     ^
+../src/main.c:212:9: warning: 'return' with a value, in function returning void
+         return XST_FAILURE;
+         ^
+../src/main.c: In function 'printMessageToPlUart':
+../src/main.c:219:5: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+     for (int i = 0; i < strlen(message); i++) {
+     ^
+../src/main.c:219:5: note: use option -std=c99, -std=gnu99, -std=c11 or -std=gnu11 to compile your code
+../src/main.c: In function 'main':
+../src/main.c:237:5: warning: implicit declaration of function 'initTimer' [-Wimplicit-function-declaration]
+     initTimer();
+     ^
+../src/main.c:233:18: warning: unused variable 'loopCount' [-Wunused-variable]
+     unsigned int loopCount;
+                  ^
+make: *** [src/main.o] Error 1
+14:46:41 **** Auto Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'initPlUart':
+../src/main.c:205:9: error: incompatible type for argument 1 of 'XGpio_Initialize'
+     if (XGpio_Initialize(plUart, XPAR_AXI_GPIO_0_DEVICE_ID) != XST_SUCCESS) {
+         ^
+In file included from ../src/scutimer_interrupt_subroutines.h:14:0,
+                 from ../src/main.c:10:
+../../lab9p2_bsp/ps7_cortexa9_0/include/xgpio.h:161:5: note: expected 'struct XGpio *' but argument is of type 'XGpio'
+ int XGpio_Initialize(XGpio *InstancePtr, u16 DeviceId);
+     ^
+../src/main.c:207:9: warning: 'return' with a value, in function returning void
+         return XST_FAILURE;
+         ^
+../src/main.c:210:9: error: incompatible type for argument 1 of 'XGpio_Initialize'
+     if (XGpio_Initialize(plUartTxFull, XPAR_AXI_GPIO_1_DEVICE_ID) != XST_SUCCESS) {
+         ^
+In file included from ../src/scutimer_interrupt_subroutines.h:14:0,
+                 from ../src/main.c:10:
+../../lab9p2_bsp/ps7_cortexa9_0/include/xgpio.h:161:5: note: expected 'struct XGpio *' but argument is of type 'XGpio'
+ int XGpio_Initialize(XGpio *InstancePtr, u16 DeviceId);
+     ^
+../src/main.c:212:9: warning: 'return' with a value, in function returning void
+         return XST_FAILURE;
+         ^
+../src/main.c: In function 'printMessageToPlUart':
+../src/main.c:220:5: error: 'for' loop initial declarations are only allowed in C99 or C11 mode
+     for (int i = 0; i < strlen(message); i++) {
+     ^
+../src/main.c:220:5: note: use option -std=c99, -std=gnu99, -std=c11 or -std=gnu11 to compile your code
+../src/main.c: In function 'main':
+../src/main.c:238:5: warning: implicit declaration of function 'initTimer' [-Wimplicit-function-declaration]
+     initTimer();
+     ^
+../src/main.c:234:18: warning: unused variable 'loopCount' [-Wunused-variable]
+     unsigned int loopCount;
+                  ^
+make: *** [src/main.o] Error 1
+14:46:58 **** Auto Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'initPlUart':
+../src/main.c:205:9: error: incompatible type for argument 1 of 'XGpio_Initialize'
+     if (XGpio_Initialize(plUart, XPAR_AXI_GPIO_0_DEVICE_ID) != XST_SUCCESS) {
+         ^
+In file included from ../src/scutimer_interrupt_subroutines.h:14:0,
+                 from ../src/main.c:10:
+../../lab9p2_bsp/ps7_cortexa9_0/include/xgpio.h:161:5: note: expected 'struct XGpio *' but argument is of type 'XGpio'
+ int XGpio_Initialize(XGpio *InstancePtr, u16 DeviceId);
+     ^
+../src/main.c:207:9: warning: 'return' with a value, in function returning void
+         return XST_FAILURE;
+         ^
+../src/main.c:210:9: error: incompatible type for argument 1 of 'XGpio_Initialize'
+     if (XGpio_Initialize(plUartTxFull, XPAR_AXI_GPIO_1_DEVICE_ID) != XST_SUCCESS) {
+         ^
+In file included from ../src/scutimer_interrupt_subroutines.h:14:0,
+                 from ../src/main.c:10:
+../../lab9p2_bsp/ps7_cortexa9_0/include/xgpio.h:161:5: note: expected 'struct XGpio *' but argument is of type 'XGpio'
+ int XGpio_Initialize(XGpio *InstancePtr, u16 DeviceId);
+     ^
+../src/main.c:212:9: warning: 'return' with a value, in function returning void
+         return XST_FAILURE;
+         ^
+../src/main.c: In function 'main':
+../src/main.c:239:5: warning: implicit declaration of function 'initTimer' [-Wimplicit-function-declaration]
+     initTimer();
+     ^
+../src/main.c:235:18: warning: unused variable 'loopCount' [-Wunused-variable]
+     unsigned int loopCount;
+                  ^
+make: *** [src/main.o] Error 1
+14:47:09 **** Auto Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'initPlUart':
+../src/main.c:205:9: error: incompatible type for argument 1 of 'XGpio_Initialize'
+     if (XGpio_Initialize(plUart, XPAR_AXI_GPIO_0_DEVICE_ID) != XST_SUCCESS) {
+         ^
+In file included from ../src/scutimer_interrupt_subroutines.h:14:0,
+                 from ../src/main.c:10:
+../../lab9p2_bsp/ps7_cortexa9_0/include/xgpio.h:161:5: note: expected 'struct XGpio *' but argument is of type 'XGpio'
+ int XGpio_Initialize(XGpio *InstancePtr, u16 DeviceId);
+     ^
+../src/main.c:207:9: warning: 'return' with a value, in function returning void
+         return XST_FAILURE;
+         ^
+../src/main.c:210:9: error: incompatible type for argument 1 of 'XGpio_Initialize'
+     if (XGpio_Initialize(plUartTxFull, XPAR_AXI_GPIO_1_DEVICE_ID) != XST_SUCCESS) {
+         ^
+In file included from ../src/scutimer_interrupt_subroutines.h:14:0,
+                 from ../src/main.c:10:
+../../lab9p2_bsp/ps7_cortexa9_0/include/xgpio.h:161:5: note: expected 'struct XGpio *' but argument is of type 'XGpio'
+ int XGpio_Initialize(XGpio *InstancePtr, u16 DeviceId);
+     ^
+../src/main.c:212:9: warning: 'return' with a value, in function returning void
+         return XST_FAILURE;
+         ^
+../src/main.c: In function 'main':
+../src/main.c:238:5: warning: implicit declaration of function 'initTimer' [-Wimplicit-function-declaration]
+     initTimer();
+     ^
+make: *** [src/main.o] Error 1
+14:47:37 **** Auto Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'initPlUart':
+../src/main.c:205:9: error: incompatible type for argument 1 of 'XGpio_Initialize'
+     if (XGpio_Initialize(plUart, XPAR_AXI_GPIO_0_DEVICE_ID) != XST_SUCCESS) {
+         ^
+In file included from ../src/scutimer_interrupt_subroutines.h:14:0,
+                 from ../src/main.c:10:
+../../lab9p2_bsp/ps7_cortexa9_0/include/xgpio.h:161:5: note: expected 'struct XGpio *' but argument is of type 'XGpio'
+ int XGpio_Initialize(XGpio *InstancePtr, u16 DeviceId);
+     ^
+../src/main.c:207:9: warning: 'return' with a value, in function returning void
+         return XST_FAILURE;
+         ^
+../src/main.c:210:9: error: incompatible type for argument 1 of 'XGpio_Initialize'
+     if (XGpio_Initialize(plUartTxFull, XPAR_AXI_GPIO_1_DEVICE_ID) != XST_SUCCESS) {
+         ^
+In file included from ../src/scutimer_interrupt_subroutines.h:14:0,
+                 from ../src/main.c:10:
+../../lab9p2_bsp/ps7_cortexa9_0/include/xgpio.h:161:5: note: expected 'struct XGpio *' but argument is of type 'XGpio'
+ int XGpio_Initialize(XGpio *InstancePtr, u16 DeviceId);
+     ^
+../src/main.c:212:9: warning: 'return' with a value, in function returning void
+         return XST_FAILURE;
+         ^
+make: *** [src/main.o] Error 1
+14:48:01 **** Auto Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'initPlUart':
+../src/main.c:205:9: error: incompatible type for argument 1 of 'XGpio_Initialize'
+     if (XGpio_Initialize(plUart, XPAR_AXI_GPIO_0_DEVICE_ID) != XST_SUCCESS) {
+         ^
+In file included from ../src/scutimer_interrupt_subroutines.h:14:0,
+                 from ../src/main.c:10:
+../../lab9p2_bsp/ps7_cortexa9_0/include/xgpio.h:161:5: note: expected 'struct XGpio *' but argument is of type 'XGpio'
+ int XGpio_Initialize(XGpio *InstancePtr, u16 DeviceId);
+     ^
+../src/main.c:210:9: error: incompatible type for argument 1 of 'XGpio_Initialize'
+     if (XGpio_Initialize(plUartTxFull, XPAR_AXI_GPIO_1_DEVICE_ID) != XST_SUCCESS) {
+         ^
+In file included from ../src/scutimer_interrupt_subroutines.h:14:0,
+                 from ../src/main.c:10:
+../../lab9p2_bsp/ps7_cortexa9_0/include/xgpio.h:161:5: note: expected 'struct XGpio *' but argument is of type 'XGpio'
+ int XGpio_Initialize(XGpio *InstancePtr, u16 DeviceId);
+     ^
+../src/main.c:217:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] Error 1
+14:48:20 **** Auto Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'initPlUart':
+../src/main.c:205:9: error: incompatible type for argument 1 of 'XGpio_Initialize'
+     if (XGpio_Initialize(plUart, XPAR_AXI_GPIO_0_DEVICE_ID) != XST_SUCCESS) {
+         ^
+In file included from ../src/scutimer_interrupt_subroutines.h:14:0,
+                 from ../src/main.c:10:
+../../lab9p2_bsp/ps7_cortexa9_0/include/xgpio.h:161:5: note: expected 'struct XGpio *' but argument is of type 'XGpio'
+ int XGpio_Initialize(XGpio *InstancePtr, u16 DeviceId);
+     ^
+../src/main.c:210:9: error: incompatible type for argument 1 of 'XGpio_Initialize'
+     if (XGpio_Initialize(plUartTxFull, XPAR_AXI_GPIO_1_DEVICE_ID) != XST_SUCCESS) {
+         ^
+In file included from ../src/scutimer_interrupt_subroutines.h:14:0,
+                 from ../src/main.c:10:
+../../lab9p2_bsp/ps7_cortexa9_0/include/xgpio.h:161:5: note: expected 'struct XGpio *' but argument is of type 'XGpio'
+ int XGpio_Initialize(XGpio *InstancePtr, u16 DeviceId);
+     ^
+make: *** [src/main.o] Error 1
+14:48:37 **** Auto Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/scutimer_interrupt_subroutines.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/scutimer_interrupt_subroutines.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/scutimer_interrupt_subroutines.d" -MT"src/scutimer_interrupt_subroutines.o" -o "src/scutimer_interrupt_subroutines.o" "../src/scutimer_interrupt_subroutines.c"
+'Finished building: ../src/scutimer_interrupt_subroutines.c'
+' '
+'Building target: lab9p2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab9p2_bsp/ps7_cortexa9_0/lib -o "lab9p2.elf"  ./src/main.o ./src/scutimer_interrupt_subroutines.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab9p2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab9p2.elf  |tee "lab9p2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 105868	   4240	  23548	 133656	  20a18	lab9p2.elf
+'Finished building: lab9p2.elf.size'
+' '
+14:48:48 **** Incremental Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:49:33 **** Auto Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: lab9p2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab9p2_bsp/ps7_cortexa9_0/lib -o "lab9p2.elf"  ./src/main.o ./src/scutimer_interrupt_subroutines.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab9p2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab9p2.elf  |tee "lab9p2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 105868	   4240	  23548	 133656	  20a18	lab9p2.elf
+'Finished building: lab9p2.elf.size'
+' '
+14:49:37 **** Incremental Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:50:34 **** Auto Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: lab9p2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab9p2_bsp/ps7_cortexa9_0/lib -o "lab9p2.elf"  ./src/main.o ./src/scutimer_interrupt_subroutines.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab9p2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab9p2.elf  |tee "lab9p2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 105868	   4240	  23548	 133656	  20a18	lab9p2.elf
+'Finished building: lab9p2.elf.size'
+' '
+14:50:39 **** Incremental Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:51:01 **** Incremental Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:52:33 **** Auto Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: lab9p2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab9p2_bsp/ps7_cortexa9_0/lib -o "lab9p2.elf"  ./src/main.o ./src/scutimer_interrupt_subroutines.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab9p2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab9p2.elf  |tee "lab9p2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 105868	   4240	  23548	 133656	  20a18	lab9p2.elf
+'Finished building: lab9p2.elf.size'
+' '
+14:52:38 **** Incremental Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:53:33 **** Auto Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: lab9p2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab9p2_bsp/ps7_cortexa9_0/lib -o "lab9p2.elf"  ./src/main.o ./src/scutimer_interrupt_subroutines.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab9p2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab9p2.elf  |tee "lab9p2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 105876	   4240	  23548	 133664	  20a20	lab9p2.elf
+'Finished building: lab9p2.elf.size'
+' '
+14:53:45 **** Incremental Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:55:07 **** Auto Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: lab9p2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab9p2_bsp/ps7_cortexa9_0/lib -o "lab9p2.elf"  ./src/main.o ./src/scutimer_interrupt_subroutines.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab9p2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab9p2.elf  |tee "lab9p2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 105876	   4240	  23548	 133664	  20a20	lab9p2.elf
+'Finished building: lab9p2.elf.size'
+' '
+14:55:16 **** Incremental Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:00:03 **** Incremental Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: lab9p2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab9p2_bsp/ps7_cortexa9_0/lib -o "lab9p2.elf"  ./src/main.o ./src/scutimer_interrupt_subroutines.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab9p2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab9p2.elf  |tee "lab9p2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 105876	   4240	  23548	 133664	  20a20	lab9p2.elf
+'Finished building: lab9p2.elf.size'
+' '
+15:01:26 **** Auto Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../lab9p2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: lab9p2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../lab9p2_bsp/ps7_cortexa9_0/lib -o "lab9p2.elf"  ./src/main.o ./src/scutimer_interrupt_subroutines.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab9p2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab9p2.elf  |tee "lab9p2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 105892	   4240	  23548	 133680	  20a30	lab9p2.elf
+'Finished building: lab9p2.elf.size'
+' '
+15:01:34 **** Incremental Build of configuration Debug for project lab9p2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.

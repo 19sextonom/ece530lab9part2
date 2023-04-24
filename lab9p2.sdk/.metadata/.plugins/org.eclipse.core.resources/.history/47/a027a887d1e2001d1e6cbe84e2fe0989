@@ -213,7 +213,7 @@ int initPlUart() {
     }
 
     XGpio_SetDataDirection(&plUart, 1, 0x00);
-    XGpio_SetDataDirection(&plUartTxFull, 1, 0x01);
+    XGpio_SetDataDirection(&plUartTxFull, 0, 0x00);
 
     return XST_SUCCESS;
 }
@@ -260,8 +260,8 @@ int main() {
         snprintf(
                 printBuffer,
                 STRING_BUFFER_SIZE,
-                "TMP101 on EMIO JF     =  %8.4f degrees\r\n"
-                "TMP101 on SelectIO JB =  %8.4f degrees\r\n\r\n",
+                "PS Temperature: %8.4f degrees\r\n"
+                "PL Temperature: %8.4f degrees\r\n",
                 tempPs,
                 tempPl
         );

@@ -3938,3 +3938,234 @@ java.lang.NullPointerException
 
 !ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:03:49.526
 !MESSAGE XSDB command with result: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:10:15.013
+!MESSAGE XSDB Command: [ ::hsi::utils::set_current_hw_sw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:10:15.050
+!MESSAGE XSDB command with result: [ ::hsi::utils::set_current_hw_sw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:10:15.054
+!MESSAGE XSDB Command: [::hsi::utils::get_hw_sw_details -json Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:10:15.081
+!MESSAGE XSDB command with result: [::hsi::utils::get_hw_sw_details -json Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "5.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:10:15.084
+!MESSAGE XSDB Command: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:10:15.097
+!MESSAGE XSDB command with result: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:11:55.636
+!MESSAGE XSDB Command: [ ::hsi::utils::set_current_hw_sw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:11:55.655
+!MESSAGE XSDB command with result: [ ::hsi::utils::set_current_hw_sw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:11:55.657
+!MESSAGE XSDB Command: [::hsi::utils::get_hw_sw_details -json Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:11:55.672
+!MESSAGE XSDB command with result: [::hsi::utils::get_hw_sw_details -json Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "5.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:11:55.673
+!MESSAGE XSDB Command: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:11:55.680
+!MESSAGE XSDB command with result: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:13:10.513
+!MESSAGE XSDB Command: [ ::hsi::utils::set_current_hw_sw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:13:10.544
+!MESSAGE XSDB command with result: [ ::hsi::utils::set_current_hw_sw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:13:10.546
+!MESSAGE XSDB Command: [::hsi::utils::get_hw_sw_details -json Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:13:10.564
+!MESSAGE XSDB command with result: [::hsi::utils::get_hw_sw_details -json Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "5.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:13:10.565
+!MESSAGE XSDB Command: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:13:10.574
+!MESSAGE XSDB command with result: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:20:09.440
+!MESSAGE XSDB Command: [ ::hsi::utils::set_current_hw_sw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:20:09.461
+!MESSAGE XSDB command with result: [ ::hsi::utils::set_current_hw_sw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:20:09.463
+!MESSAGE XSDB Command: [::hsi::utils::get_hw_sw_details -json Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:20:09.477
+!MESSAGE XSDB command with result: [::hsi::utils::get_hw_sw_details -json Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "5.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:20:09.478
+!MESSAGE XSDB Command: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:20:09.484
+!MESSAGE XSDB command with result: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:27:22.213
+!MESSAGE XSDB Command: [ ::hsi::utils::set_current_hw_sw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:27:22.232
+!MESSAGE XSDB command with result: [ ::hsi::utils::set_current_hw_sw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:27:22.234
+!MESSAGE XSDB Command: [::hsi::utils::get_hw_sw_details -json Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:27:22.254
+!MESSAGE XSDB command with result: [::hsi::utils::get_hw_sw_details -json Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "5.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:27:22.255
+!MESSAGE XSDB Command: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:27:22.262
+!MESSAGE XSDB command with result: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:36:51.027
+!MESSAGE XSDB Command: [ ::hsi::utils::set_current_hw_sw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:36:51.051
+!MESSAGE XSDB command with result: [ ::hsi::utils::set_current_hw_sw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:36:51.053
+!MESSAGE XSDB Command: [::hsi::utils::get_hw_sw_details -json Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:36:51.073
+!MESSAGE XSDB command with result: [::hsi::utils::get_hw_sw_details -json Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "5.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:36:51.074
+!MESSAGE XSDB Command: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:36:51.083
+!MESSAGE XSDB command with result: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:47:37.817
+!MESSAGE XSDB Command: [ ::hsi::utils::set_current_hw_sw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:47:37.840
+!MESSAGE XSDB command with result: [ ::hsi::utils::set_current_hw_sw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:47:37.843
+!MESSAGE XSDB Command: [::hsi::utils::get_hw_sw_details -json Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:47:37.861
+!MESSAGE XSDB command with result: [::hsi::utils::get_hw_sw_details -json Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "5.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:47:37.862
+!MESSAGE XSDB Command: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:47:37.871
+!MESSAGE XSDB command with result: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:48:45.671
+!MESSAGE XSDB Command: [ ::hsi::utils::set_current_hw_sw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:48:45.688
+!MESSAGE XSDB command with result: [ ::hsi::utils::set_current_hw_sw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:48:45.689
+!MESSAGE XSDB Command: [::hsi::utils::get_hw_sw_details -json Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:48:45.702
+!MESSAGE XSDB command with result: [::hsi::utils::get_hw_sw_details -json Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "5.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:48:45.704
+!MESSAGE XSDB Command: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:48:45.710
+!MESSAGE XSDB command with result: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:49:35.473
+!MESSAGE XSDB Command: [ ::hsi::utils::set_current_hw_sw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:49:35.489
+!MESSAGE XSDB command with result: [ ::hsi::utils::set_current_hw_sw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:49:35.491
+!MESSAGE XSDB Command: [::hsi::utils::get_hw_sw_details -json Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:49:35.506
+!MESSAGE XSDB command with result: [::hsi::utils::get_hw_sw_details -json Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "5.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:49:35.507
+!MESSAGE XSDB Command: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:49:35.516
+!MESSAGE XSDB command with result: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:50:36.430
+!MESSAGE XSDB Command: [ ::hsi::utils::set_current_hw_sw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:50:36.454
+!MESSAGE XSDB command with result: [ ::hsi::utils::set_current_hw_sw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:50:36.457
+!MESSAGE XSDB Command: [::hsi::utils::get_hw_sw_details -json Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:50:36.478
+!MESSAGE XSDB command with result: [::hsi::utils::get_hw_sw_details -json Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "5.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:50:36.480
+!MESSAGE XSDB Command: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:50:36.489
+!MESSAGE XSDB command with result: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:50:58.788
+!MESSAGE XSDB Command: [ ::hsi::utils::set_current_hw_sw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:50:58.805
+!MESSAGE XSDB command with result: [ ::hsi::utils::set_current_hw_sw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:50:58.807
+!MESSAGE XSDB Command: [::hsi::utils::get_hw_sw_details -json Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:50:58.820
+!MESSAGE XSDB command with result: [::hsi::utils::get_hw_sw_details -json Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/LEDcounter_scutimer_interrupt_wrapper_hw_platform_0/system.hdf Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "5.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:50:58.822
+!MESSAGE XSDB Command: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-04-24 14:50:58.828
+!MESSAGE XSDB command with result: [::hsi::utils::closesw Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.sdk/lab9p2_bsp/system.mss], Result: [null, ]. Thread: main
