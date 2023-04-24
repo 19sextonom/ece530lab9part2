@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="14" Path="D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.xpr">
+<Project Version="7" Minor="14" Path="Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="7cbb28a1c2e74a9a96b380b829df51be"/>
@@ -53,20 +53,20 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="LEDcounter_scutimer_interrupt.bd" FileRelPathName="ip/LEDcounter_scutimer_interrupt_xbar_0/LEDcounter_scutimer_interrupt_xbar_0.xci"/>
+        <CompFileExtendedInfo CompFileName="LEDcounter_scutimer_interrupt.bd" FileRelPathName="ip/LEDcounter_scutimer_interrupt_axi_gpio_1_0/LEDcounter_scutimer_interrupt_axi_gpio_1_0.xci"/>
         <CompFileExtendedInfo CompFileName="LEDcounter_scutimer_interrupt.bd" FileRelPathName="hdl/LEDcounter_scutimer_interrupt.v"/>
-        <CompFileExtendedInfo CompFileName="LEDcounter_scutimer_interrupt.bd" FileRelPathName="ip/LEDcounter_scutimer_interrupt_processing_system7_0_axi_periph_0/LEDcounter_scutimer_interrupt_processing_system7_0_axi_periph_0.xci"/>
-        <CompFileExtendedInfo CompFileName="LEDcounter_scutimer_interrupt.bd" FileRelPathName="ip/LEDcounter_scutimer_interrupt_axi_gpio_0_0/LEDcounter_scutimer_interrupt_axi_gpio_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="LEDcounter_scutimer_interrupt.bd" FileRelPathName="ip/LEDcounter_scutimer_interrupt_rst_processing_system7_0_100M_0/LEDcounter_scutimer_interrupt_rst_processing_system7_0_100M_0.xci"/>
+        <CompFileExtendedInfo CompFileName="LEDcounter_scutimer_interrupt.bd" FileRelPathName="ip/LEDcounter_scutimer_interrupt_axi_gpio_0_0/LEDcounter_scutimer_interrupt_axi_gpio_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="LEDcounter_scutimer_interrupt.bd" FileRelPathName="ip/LEDcounter_scutimer_interrupt_processing_system7_0_0/LEDcounter_scutimer_interrupt_processing_system7_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="LEDcounter_scutimer_interrupt.bd" FileRelPathName="ip/LEDcounter_scutimer_interrupt_processing_system7_0_axi_periph_0/LEDcounter_scutimer_interrupt_processing_system7_0_axi_periph_0.xci"/>
+        <CompFileExtendedInfo CompFileName="LEDcounter_scutimer_interrupt.bd" FileRelPathName="ip/LEDcounter_scutimer_interrupt_axi_gpio_0_1/LEDcounter_scutimer_interrupt_axi_gpio_0_1.xci"/>
         <CompFileExtendedInfo CompFileName="LEDcounter_scutimer_interrupt.bd" FileRelPathName="ip/LEDcounter_scutimer_interrupt_UARTmodule2023_0_1/LEDcounter_scutimer_interrupt_UARTmodule2023_0_1.xci"/>
         <CompFileExtendedInfo CompFileName="LEDcounter_scutimer_interrupt.bd" FileRelPathName="ip/LEDcounter_scutimer_interrupt_auto_pc_0/LEDcounter_scutimer_interrupt_auto_pc_0.xci"/>
-        <CompFileExtendedInfo CompFileName="LEDcounter_scutimer_interrupt.bd" FileRelPathName="ip/LEDcounter_scutimer_interrupt_xbar_0/LEDcounter_scutimer_interrupt_xbar_0.xci"/>
-        <CompFileExtendedInfo CompFileName="LEDcounter_scutimer_interrupt.bd" FileRelPathName="ip/LEDcounter_scutimer_interrupt_axi_gpio_0_1/LEDcounter_scutimer_interrupt_axi_gpio_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="LEDcounter_scutimer_interrupt.bd" FileRelPathName="ip/LEDcounter_scutimer_interrupt_axi_gpio_1_0/LEDcounter_scutimer_interrupt_axi_gpio_1_0.xci"/>
         <CompFileExtendedInfo CompFileName="LEDcounter_scutimer_interrupt.bd" FileRelPathName="LEDcounter_scutimer_interrupt_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="LEDcounter_scutimer_interrupt.bd" FileRelPathName="hw_handoff/LEDcounter_scutimer_interrupt.hwh"/>
         <CompFileExtendedInfo CompFileName="LEDcounter_scutimer_interrupt.bd" FileRelPathName="hdl/LEDcounter_scutimer_interrupt.hwdef"/>
         <CompFileExtendedInfo CompFileName="LEDcounter_scutimer_interrupt.bd" FileRelPathName="hw_handoff/LEDcounter_scutimer_interrupt_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="LEDcounter_scutimer_interrupt.bd" FileRelPathName="hw_handoff/LEDcounter_scutimer_interrupt.hwh"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/LEDcounter_scutimer_interrupt/hdl/LEDcounter_scutimer_interrupt_wrapper.v">
         <FileInfo>

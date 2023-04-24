@@ -1,8 +1,8 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-//Date        : Sun Apr 23 17:20:48 2023
-//Host        : RHIT-R90VM7WS running 64-bit major release  (build 9200)
+//Date        : Mon Apr 24 13:43:22 2023
+//Host        : DESKTOP-EG61PQH running 64-bit major release  (build 9200)
 //Command     : generate_target LEDcounter_scutimer_interrupt.bd
 //Design      : LEDcounter_scutimer_interrupt
 //Purpose     : IP block netlist
@@ -32,6 +32,12 @@ module LEDcounter_scutimer_interrupt
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
+    IIC_1_scl_i,
+    IIC_1_scl_o,
+    IIC_1_scl_t,
+    IIC_1_sda_i,
+    IIC_1_sda_o,
+    IIC_1_sda_t,
     LEDs_tri_o,
     tx);
   inout [14:0]DDR_addr;
@@ -55,6 +61,12 @@ module LEDcounter_scutimer_interrupt
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
+  input IIC_1_scl_i;
+  output IIC_1_scl_o;
+  output IIC_1_scl_t;
+  input IIC_1_sda_i;
+  output IIC_1_sda_o;
+  output IIC_1_sda_t;
   output [3:0]LEDs_tri_o;
   output tx;
 
@@ -86,6 +98,12 @@ module LEDcounter_scutimer_interrupt
   wire processing_system7_0_FIXED_IO_PS_CLK;
   wire processing_system7_0_FIXED_IO_PS_PORB;
   wire processing_system7_0_FIXED_IO_PS_SRSTB;
+  wire processing_system7_0_IIC_1_SCL_I;
+  wire processing_system7_0_IIC_1_SCL_O;
+  wire processing_system7_0_IIC_1_SCL_T;
+  wire processing_system7_0_IIC_1_SDA_I;
+  wire processing_system7_0_IIC_1_SDA_O;
+  wire processing_system7_0_IIC_1_SDA_T;
   wire [31:0]processing_system7_0_M_AXI_GP0_ARADDR;
   wire [1:0]processing_system7_0_M_AXI_GP0_ARBURST;
   wire [3:0]processing_system7_0_M_AXI_GP0_ARCACHE;
@@ -178,7 +196,13 @@ module LEDcounter_scutimer_interrupt
   wire [0:0]rst_processing_system7_0_100M_interconnect_aresetn;
   wire [0:0]rst_processing_system7_0_100M_peripheral_aresetn;
 
+  assign IIC_1_scl_o = processing_system7_0_IIC_1_SCL_O;
+  assign IIC_1_scl_t = processing_system7_0_IIC_1_SCL_T;
+  assign IIC_1_sda_o = processing_system7_0_IIC_1_SDA_O;
+  assign IIC_1_sda_t = processing_system7_0_IIC_1_SDA_T;
   assign LEDs_tri_o[3:0] = axi_gpio_0_GPIO_TRI_O;
+  assign processing_system7_0_IIC_1_SCL_I = IIC_1_scl_i;
+  assign processing_system7_0_IIC_1_SDA_I = IIC_1_sda_i;
   assign tx = UARTmodule2023_0_tx;
   LEDcounter_scutimer_interrupt_axi_gpio_0_0 LEDs
        (.gpio_io_o(axi_gpio_0_GPIO_TRI_O),
@@ -273,6 +297,12 @@ module LEDcounter_scutimer_interrupt
         .DDR_WEB(DDR_we_n),
         .FCLK_CLK0(processing_system7_0_FCLK_CLK0),
         .FCLK_RESET0_N(processing_system7_0_FCLK_RESET0_N),
+        .I2C1_SCL_I(processing_system7_0_IIC_1_SCL_I),
+        .I2C1_SCL_O(processing_system7_0_IIC_1_SCL_O),
+        .I2C1_SCL_T(processing_system7_0_IIC_1_SCL_T),
+        .I2C1_SDA_I(processing_system7_0_IIC_1_SDA_I),
+        .I2C1_SDA_O(processing_system7_0_IIC_1_SDA_O),
+        .I2C1_SDA_T(processing_system7_0_IIC_1_SDA_T),
         .MIO(FIXED_IO_mio[53:0]),
         .M_AXI_GP0_ACLK(processing_system7_0_FCLK_CLK0),
         .M_AXI_GP0_ARADDR(processing_system7_0_M_AXI_GP0_ARADDR),

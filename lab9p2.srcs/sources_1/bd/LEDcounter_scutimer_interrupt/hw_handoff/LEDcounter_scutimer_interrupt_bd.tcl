@@ -156,6 +156,7 @@ proc create_root_design { parentCell } {
   # Create interface ports
   set DDR [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:ddrx_rtl:1.0 DDR ]
   set FIXED_IO [ create_bd_intf_port -mode Master -vlnv xilinx.com:display_processing_system7:fixedio_rtl:1.0 FIXED_IO ]
+  set IIC_1 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:iic_rtl:1.0 IIC_1 ]
   set LEDs [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 LEDs ]
 
   # Create ports
@@ -294,6 +295,9 @@ CONFIG.PCW_ENET_RESET_ENABLE {1} \
 CONFIG.PCW_ENET_RESET_POLARITY {Active Low} \
 CONFIG.PCW_ENET_RESET_SELECT {<Select>} \
 CONFIG.PCW_EN_4K_TIMER {0} \
+CONFIG.PCW_EN_EMIO_I2C1 {1} \
+CONFIG.PCW_EN_I2C0 {1} \
+CONFIG.PCW_EN_I2C1 {1} \
 CONFIG.PCW_EN_UART1 {1} \
 CONFIG.PCW_FCLK0_PERIPHERAL_CLKSRC {IO PLL} \
 CONFIG.PCW_FCLK0_PERIPHERAL_DIVISOR0 {4} \
@@ -318,22 +322,22 @@ CONFIG.PCW_GPIO_EMIO_GPIO_IO {<Select>} \
 CONFIG.PCW_GPIO_MIO_GPIO_ENABLE {1} \
 CONFIG.PCW_GPIO_MIO_GPIO_IO {MIO} \
 CONFIG.PCW_GPIO_PERIPHERAL_ENABLE {0} \
-CONFIG.PCW_I2C0_GRP_INT_ENABLE {0} \
-CONFIG.PCW_I2C0_GRP_INT_IO {<Select>} \
-CONFIG.PCW_I2C0_I2C0_IO {<Select>} \
-CONFIG.PCW_I2C0_PERIPHERAL_ENABLE {0} \
+CONFIG.PCW_I2C0_GRP_INT_ENABLE {1} \
+CONFIG.PCW_I2C0_GRP_INT_IO {EMIO} \
+CONFIG.PCW_I2C0_I2C0_IO {MIO 14 .. 15} \
+CONFIG.PCW_I2C0_PERIPHERAL_ENABLE {1} \
 CONFIG.PCW_I2C0_RESET_ENABLE {0} \
 CONFIG.PCW_I2C0_RESET_IO {<Select>} \
-CONFIG.PCW_I2C1_GRP_INT_ENABLE {0} \
-CONFIG.PCW_I2C1_GRP_INT_IO {<Select>} \
-CONFIG.PCW_I2C1_I2C1_IO {<Select>} \
-CONFIG.PCW_I2C1_PERIPHERAL_ENABLE {0} \
+CONFIG.PCW_I2C1_GRP_INT_ENABLE {1} \
+CONFIG.PCW_I2C1_GRP_INT_IO {EMIO} \
+CONFIG.PCW_I2C1_I2C1_IO {EMIO} \
+CONFIG.PCW_I2C1_PERIPHERAL_ENABLE {1} \
 CONFIG.PCW_I2C1_RESET_ENABLE {0} \
 CONFIG.PCW_I2C1_RESET_IO {<Select>} \
-CONFIG.PCW_I2C_PERIPHERAL_FREQMHZ {25} \
+CONFIG.PCW_I2C_PERIPHERAL_FREQMHZ {108.333336} \
 CONFIG.PCW_I2C_RESET_ENABLE {1} \
 CONFIG.PCW_I2C_RESET_POLARITY {Active Low} \
-CONFIG.PCW_I2C_RESET_SELECT {<Select>} \
+CONFIG.PCW_I2C_RESET_SELECT {Share reset pin} \
 CONFIG.PCW_IOPLL_CTRL_FBDIV {32} \
 CONFIG.PCW_IO_IO_PLL_FREQMHZ {1600.000} \
 CONFIG.PCW_MIO_0_DIRECTION {inout} \
@@ -552,8 +556,8 @@ CONFIG.PCW_MIO_9_DIRECTION {inout} \
 CONFIG.PCW_MIO_9_IOTYPE {LVCMOS 3.3V} \
 CONFIG.PCW_MIO_9_PULLUP {enabled} \
 CONFIG.PCW_MIO_9_SLEW {slow} \
-CONFIG.PCW_MIO_TREE_PERIPHERALS {GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#UART 1#UART 1#GPIO#GPIO#GPIO#GPIO} \
-CONFIG.PCW_MIO_TREE_SIGNALS {gpio[0]#gpio[1]#gpio[2]#gpio[3]#gpio[4]#gpio[5]#gpio[6]#gpio[7]#gpio[8]#gpio[9]#gpio[10]#gpio[11]#gpio[12]#gpio[13]#gpio[14]#gpio[15]#gpio[16]#gpio[17]#gpio[18]#gpio[19]#gpio[20]#gpio[21]#gpio[22]#gpio[23]#gpio[24]#gpio[25]#gpio[26]#gpio[27]#gpio[28]#gpio[29]#gpio[30]#gpio[31]#gpio[32]#gpio[33]#gpio[34]#gpio[35]#gpio[36]#gpio[37]#gpio[38]#gpio[39]#gpio[40]#gpio[41]#gpio[42]#gpio[43]#gpio[44]#gpio[45]#gpio[46]#gpio[47]#tx#rx#gpio[50]#gpio[51]#gpio[52]#gpio[53]} \
+CONFIG.PCW_MIO_TREE_PERIPHERALS {GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#I2C 0#I2C 0#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#UART 1#UART 1#GPIO#GPIO#GPIO#GPIO} \
+CONFIG.PCW_MIO_TREE_SIGNALS {gpio[0]#gpio[1]#gpio[2]#gpio[3]#gpio[4]#gpio[5]#gpio[6]#gpio[7]#gpio[8]#gpio[9]#gpio[10]#gpio[11]#gpio[12]#gpio[13]#scl#sda#gpio[16]#gpio[17]#gpio[18]#gpio[19]#gpio[20]#gpio[21]#gpio[22]#gpio[23]#gpio[24]#gpio[25]#gpio[26]#gpio[27]#gpio[28]#gpio[29]#gpio[30]#gpio[31]#gpio[32]#gpio[33]#gpio[34]#gpio[35]#gpio[36]#gpio[37]#gpio[38]#gpio[39]#gpio[40]#gpio[41]#gpio[42]#gpio[43]#gpio[44]#gpio[45]#gpio[46]#gpio[47]#tx#rx#gpio[50]#gpio[51]#gpio[52]#gpio[53]} \
 CONFIG.PCW_NAND_CYCLES_T_AR {1} \
 CONFIG.PCW_NAND_CYCLES_T_CLR {1} \
 CONFIG.PCW_NAND_CYCLES_T_RC {11} \
@@ -925,6 +929,9 @@ CONFIG.PCW_ENET_RESET_ENABLE.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_ENET_RESET_POLARITY.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_ENET_RESET_SELECT.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_EN_4K_TIMER.VALUE_SRC {DEFAULT} \
+CONFIG.PCW_EN_EMIO_I2C1.VALUE_SRC {DEFAULT} \
+CONFIG.PCW_EN_I2C0.VALUE_SRC {DEFAULT} \
+CONFIG.PCW_EN_I2C1.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_EN_UART1.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_FCLK0_PERIPHERAL_CLKSRC.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_FCLK0_PERIPHERAL_DIVISOR0.VALUE_SRC {DEFAULT} \
@@ -949,14 +956,11 @@ CONFIG.PCW_GPIO_MIO_GPIO_IO.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_GPIO_PERIPHERAL_ENABLE.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_I2C0_GRP_INT_ENABLE.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_I2C0_GRP_INT_IO.VALUE_SRC {DEFAULT} \
-CONFIG.PCW_I2C0_I2C0_IO.VALUE_SRC {DEFAULT} \
-CONFIG.PCW_I2C0_PERIPHERAL_ENABLE.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_I2C0_RESET_ENABLE.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_I2C0_RESET_IO.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_I2C1_GRP_INT_ENABLE.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_I2C1_GRP_INT_IO.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_I2C1_I2C1_IO.VALUE_SRC {DEFAULT} \
-CONFIG.PCW_I2C1_PERIPHERAL_ENABLE.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_I2C1_RESET_ENABLE.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_I2C1_RESET_IO.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_I2C_PERIPHERAL_FREQMHZ.VALUE_SRC {DEFAULT} \
@@ -1349,6 +1353,7 @@ CONFIG.NUM_MI {3} \
   connect_bd_intf_net -intf_net axi_gpio_0_GPIO [get_bd_intf_ports LEDs] [get_bd_intf_pins LEDs/GPIO]
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins processing_system7_0/DDR]
   connect_bd_intf_net -intf_net processing_system7_0_FIXED_IO [get_bd_intf_ports FIXED_IO] [get_bd_intf_pins processing_system7_0/FIXED_IO]
+  connect_bd_intf_net -intf_net processing_system7_0_IIC_1 [get_bd_intf_ports IIC_1] [get_bd_intf_pins processing_system7_0/IIC_1]
   connect_bd_intf_net -intf_net processing_system7_0_M_AXI_GP0 [get_bd_intf_pins processing_system7_0/M_AXI_GP0] [get_bd_intf_pins processing_system7_0_axi_periph/S00_AXI]
   connect_bd_intf_net -intf_net processing_system7_0_axi_periph_M00_AXI [get_bd_intf_pins LEDs/S_AXI] [get_bd_intf_pins processing_system7_0_axi_periph/M00_AXI]
   connect_bd_intf_net -intf_net processing_system7_0_axi_periph_M01_AXI [get_bd_intf_pins axi_gpio_0/S_AXI] [get_bd_intf_pins processing_system7_0_axi_periph/M01_AXI]
@@ -1373,33 +1378,35 @@ CONFIG.NUM_MI {3} \
   regenerate_bd_layout -layout_string {
    guistr: "# # String gsaved with Nlview 6.5.12  2016-01-29 bk=1.3547 VDI=39 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -y -40 -defaultsOSRD
-preplace port tx -pg 1 -y 120 -defaultsOSRD
-preplace port LEDs -pg 1 -y -260 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -y -20 -defaultsOSRD
-preplace inst rst_processing_system7_0_100M -pg 1 -lvl 1 -y -170 -defaultsOSRD
-preplace inst LEDs -pg 1 -lvl 3 -y -260 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 2 -y 160 -defaultsOSRD
-preplace inst axi_gpio_1 -pg 1 -lvl 4 -y 170 -defaultsOSRD
-preplace inst UARTmodule2023_0 -pg 1 -lvl 3 -y 160 -defaultsOSRD
-preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y -280 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 1 -y 120 -defaultsOSRD
-preplace netloc processing_system7_0_DDR 1 1 4 NJ -40 NJ -40 NJ -40 NJ
-preplace netloc UARTmodule2023_0_tx 1 3 2 NJ 100 NJ
-preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 1 1030
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 650
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 3 20 210 640 240 NJ
-preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 2 NJ -330 1350
-preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 3 NJ -120 1040 -120 NJ
-preplace netloc axi_gpio_0_gpio_io_o 1 2 1 1010
-preplace netloc processing_system7_0_FIXED_IO 1 1 4 NJ -20 NJ -20 NJ -20 NJ
-preplace netloc UARTmodule2023_0_tx_full 1 3 2 NJ 90 1600
-preplace netloc axi_gpio_0_GPIO 1 3 2 NJ -260 N
-preplace netloc axi_gpio_0_gpio2_io_o 1 2 1 1020
-preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 1 640
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 10 -260 670 -110 1030 260 NJ
-preplace netloc processing_system7_0_axi_periph_M01_AXI 1 1 2 700 -80 1010
-levelinfo -pg 1 -10 460 860 1180 1480 1630 -top -430 -bot 270
+preplace port DDR -pg 1 -y 270 -defaultsOSRD
+preplace port tx -pg 1 -y 330 -defaultsOSRD
+preplace port LEDs -pg 1 -y 60 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 470 -defaultsOSRD
+preplace port IIC_1 -pg 1 -y 420 -defaultsOSRD
+preplace inst rst_processing_system7_0_100M -pg 1 -lvl 1 -y 250 -defaultsOSRD
+preplace inst LEDs -pg 1 -lvl 3 -y 60 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -y 310 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 3 -y 180 -defaultsOSRD
+preplace inst UARTmodule2023_0 -pg 1 -lvl 4 -y 370 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 220 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 430 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 4 NJ 380 NJ 390 NJ 270 NJ
+preplace netloc UARTmodule2023_0_tx 1 4 1 NJ
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 1 750
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 430
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 4 30 530 410 420 NJ 420 N
+preplace netloc processing_system7_0_IIC_1 1 1 4 NJ 430 NJ 430 NJ 470 NJ
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 1 790
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 2 450 60 760
+preplace netloc axi_gpio_0_gpio_io_o 1 3 1 1070
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 NJ 480 NJ 480 NJ 480 NJ
+preplace netloc UARTmodule2023_0_tx_full 1 3 2 NJ 190 1350
+preplace netloc axi_gpio_0_GPIO 1 3 2 NJ 60 NJ
+preplace netloc axi_gpio_0_gpio2_io_o 1 3 1 1060
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 1 440
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 20 160 390 50 770 400 NJ
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 1 780
+levelinfo -pg 1 0 210 600 920 1210 1380 -top 0 -bot 550
 ",
 }
 

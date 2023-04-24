@@ -44,7 +44,6 @@ proc step_failed { step } {
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {HDL-1065} -limit 10000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 
@@ -52,14 +51,14 @@ start_step init_design
 set rc [catch {
   create_msg_db init_design.pb
   reset_param project.defaultXPMLibraries 
-  open_checkpoint D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.runs/impl_1/LEDcounter_scutimer_interrupt_wrapper.dcp
-  set_property webtalk.parent_dir D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.cache/wt [current_project]
-  set_property parent.project_path D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.xpr [current_project]
+  open_checkpoint Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.runs/impl_1/LEDcounter_scutimer_interrupt_wrapper.dcp
+  set_property webtalk.parent_dir Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.cache/wt [current_project]
+  set_property parent.project_path Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.xpr [current_project]
   set_property ip_repo_paths {
-  d:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.cache/ip
-  D:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP
+  z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.cache/ip
+  Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9UART_IP
 } [current_project]
-  set_property ip_output_repo d:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.cache/ip [current_project]
+  set_property ip_output_repo z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.cache/ip [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
   write_hwdef -file LEDcounter_scutimer_interrupt_wrapper.hwdef
   close_msg_db -file init_design.pb

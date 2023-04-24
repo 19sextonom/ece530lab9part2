@@ -1,4 +1,5 @@
-set_property SRC_FILE_INFO {cfile:d:/ECE/ECE530/XUP/embedded/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/ip/LEDcounter_scutimer_interrupt_processing_system7_0_0/LEDcounter_scutimer_interrupt_processing_system7_0_0.xdc rfile:../../../lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/ip/LEDcounter_scutimer_interrupt_processing_system7_0_0/LEDcounter_scutimer_interrupt_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:LEDcounter_scutimer_interrupt_i/processing_system7_0/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/ip/LEDcounter_scutimer_interrupt_processing_system7_0_0/LEDcounter_scutimer_interrupt_processing_system7_0_0.xdc rfile:../../../lab9p2.srcs/sources_1/bd/LEDcounter_scutimer_interrupt/ip/LEDcounter_scutimer_interrupt_processing_system7_0_0/LEDcounter_scutimer_interrupt_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:LEDcounter_scutimer_interrupt_i/processing_system7_0/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:Z:/Development/ece530/xup/2015_2_zynq_labs/ece530lab9part2/lab9p2.srcs/constrs_1/new/lab9p2.xdc rfile:../../../lab9p2.srcs/constrs_1/new/lab9p2.xdc id:2} [current_design]
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter clk_fpga_0 0.3
 set_property src_info {type:SCOPED_XDC file:1 line:31 export:INPUT save:INPUT read:READ} [current_design]
@@ -261,3 +262,5 @@ set_property src_info {type:SCOPED_XDC file:1 line:647 export:INPUT save:INPUT r
 set_property PACKAGE_PIN "B10" [get_ports "PS_SRSTB"]
 set_property src_info {type:SCOPED_XDC file:1 line:650 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN "E7" [get_ports "PS_CLK"]
+set_property src_info {type:XDC file:2 line:1 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V15 [get_ports tx]

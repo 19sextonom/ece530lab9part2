@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Sun Apr 23 17:33:17 2023
-| Host         : RHIT-R90VM7WS running 64-bit major release  (build 9200)
+| Date         : Mon Apr 24 13:49:45 2023
+| Host         : DESKTOP-EG61PQH running 64-bit major release  (build 9200)
 | Command      : report_io -file LEDcounter_scutimer_interrupt_wrapper_io_placed.rpt
 | Design       : LEDcounter_scutimer_interrupt_wrapper
 | Device       : xc7z010
@@ -23,7 +23,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           135 |
+|           137 |
 +---------------+
 
 
@@ -392,7 +392,7 @@ Table of Contents
 | V17        |                   | High Range | IO_L21P_T3_DQS_34       | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |
 | V18        |                   | High Range | IO_L21N_T3_DQS_34       | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |
 | V19        |                   |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |
-| V20        |                   | High Range | IO_L16P_T2_34           | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |
+| V20        | iic_1_scl_io      | High Range | IO_L16P_T2_34           | BIDIR         | LVCMOS33          |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
 | W1         | DDR_dq[26]        |            | PS_DDR_DQ26_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |
 | W2         |                   |            | GND                     | GND           |                   |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |
 | W3         | DDR_dq[29]        |            | PS_DDR_DQ29_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |
@@ -412,7 +412,7 @@ Table of Contents
 | W17        |                   | High Range | VCCO_34                 | VCCO          |                   |      34 |            |      |                     |                      |    3.30 |            |           |          |      |                  |
 | W18        |                   | High Range | IO_L22P_T3_34           | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |
 | W19        |                   | High Range | IO_L22N_T3_34           | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |
-| W20        |                   | High Range | IO_L16N_T2_34           | User IO       |                   |      34 |            |      |                     |                      |         |            |           |          |      |                  |
+| W20        | iic_1_sda_io      | High Range | IO_L16N_T2_34           | BIDIR         | LVCMOS33          |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
 | Y1         | DDR_dm[3]         |            | PS_DDR_DM3_502          | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |
 | Y2         | DDR_dq[28]        |            | PS_DDR_DQ28_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |
 | Y3         | DDR_dq[25]        |            | PS_DDR_DQ25_502         | BIDIR         | SSTL15_T_DCI      |         |            | FAST |           DCI SPLIT |            FP_VTT_50 |         | FIXED      |           |          |      | SPLIT            |

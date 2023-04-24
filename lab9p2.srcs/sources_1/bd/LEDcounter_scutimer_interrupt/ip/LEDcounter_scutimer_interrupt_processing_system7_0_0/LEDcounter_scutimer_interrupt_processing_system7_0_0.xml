@@ -1088,7 +1088,7 @@
       <spirit:vendorExtensions>
         <xilinx:busInterfaceInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_I2C1)) = 1)">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_I2C1)) = 1)">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:busInterfaceInfo>
       </spirit:vendorExtensions>
@@ -9731,11 +9731,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Apr 03 01:03:21 UTC 2023</spirit:value>
+            <spirit:value>Mon Apr 24 17:43:44 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>56f684f8</spirit:value>
+            <spirit:value>49a868d3</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -9743,7 +9743,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>890a9137</spirit:value>
+            <spirit:value>9c10a35e</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -9762,11 +9762,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Apr 03 01:03:21 UTC 2023</spirit:value>
+            <spirit:value>Mon Apr 24 17:43:44 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>56f684f8</spirit:value>
+            <spirit:value>49a868d3</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -9774,7 +9774,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>890a9137</spirit:value>
+            <spirit:value>9c10a35e</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -9792,7 +9792,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>56f684f8</spirit:value>
+            <spirit:value>49a868d3</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -9800,7 +9800,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>c0693891</spirit:value>
+            <spirit:value>d3205f56</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -9818,11 +9818,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Apr 03 01:03:22 UTC 2023</spirit:value>
+            <spirit:value>Mon Apr 24 17:43:45 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
-            <spirit:value>56f684f8</spirit:value>
+            <spirit:value>49a868d3</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRCversion</spirit:name>
@@ -9830,7 +9830,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>c0693891</spirit:value>
+            <spirit:value>d3205f56</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -11219,7 +11219,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_I2C1)) = 1)">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_I2C1)) = 1)">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11239,7 +11239,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_I2C1)) = 1)">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_I2C1)) = 1)">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11259,7 +11259,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_I2C1)) = 1)">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_I2C1)) = 1)">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11282,7 +11282,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_I2C1)) = 1)">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_I2C1)) = 1)">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11302,7 +11302,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_I2C1)) = 1)">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_I2C1)) = 1)">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -11322,7 +11322,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_I2C1)) = 1)">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_I2C1)) = 1)">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -25754,6 +25754,21 @@
       <spirit:enumeration>HPR(32)/LPR(0)</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
+      <spirit:name>choice_list_239baa1b</spirit:name>
+      <spirit:enumeration>EMIO</spirit:enumeration>
+      <spirit:enumeration>MIO 12 .. 13</spirit:enumeration>
+      <spirit:enumeration>MIO 16 .. 17</spirit:enumeration>
+      <spirit:enumeration>MIO 20 .. 21</spirit:enumeration>
+      <spirit:enumeration>MIO 24 .. 25</spirit:enumeration>
+      <spirit:enumeration>MIO 28 .. 29</spirit:enumeration>
+      <spirit:enumeration>MIO 32 .. 33</spirit:enumeration>
+      <spirit:enumeration>MIO 36 .. 37</spirit:enumeration>
+      <spirit:enumeration>MIO 40 .. 41</spirit:enumeration>
+      <spirit:enumeration>MIO 44 .. 45</spirit:enumeration>
+      <spirit:enumeration>MIO 48 .. 49</spirit:enumeration>
+      <spirit:enumeration>MIO 52 .. 53</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
       <spirit:name>choice_list_27376075</spirit:name>
       <spirit:enumeration>12</spirit:enumeration>
     </spirit:choice>
@@ -26044,6 +26059,11 @@
       <spirit:enumeration>0</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
+      <spirit:name>choice_list_6885bca1</spirit:name>
+      <spirit:enumeration>Share reset pin</spirit:enumeration>
+      <spirit:enumeration>Separate reset pins</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
       <spirit:name>choice_list_6a282484</spirit:name>
       <spirit:enumeration>&lt;Select></spirit:enumeration>
       <spirit:enumeration>EMIO</spirit:enumeration>
@@ -26112,6 +26132,64 @@
       <spirit:name>choice_list_6bd7fb73</spirit:name>
       <spirit:enumeration>Active High</spirit:enumeration>
       <spirit:enumeration>Active Low</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_727c50f2</spirit:name>
+      <spirit:enumeration>EMIO</spirit:enumeration>
+      <spirit:enumeration>MIO 0</spirit:enumeration>
+      <spirit:enumeration>MIO 1</spirit:enumeration>
+      <spirit:enumeration>MIO 2</spirit:enumeration>
+      <spirit:enumeration>MIO 3</spirit:enumeration>
+      <spirit:enumeration>MIO 4</spirit:enumeration>
+      <spirit:enumeration>MIO 5</spirit:enumeration>
+      <spirit:enumeration>MIO 6</spirit:enumeration>
+      <spirit:enumeration>MIO 7</spirit:enumeration>
+      <spirit:enumeration>MIO 8</spirit:enumeration>
+      <spirit:enumeration>MIO 9</spirit:enumeration>
+      <spirit:enumeration>MIO 10</spirit:enumeration>
+      <spirit:enumeration>MIO 11</spirit:enumeration>
+      <spirit:enumeration>MIO 12</spirit:enumeration>
+      <spirit:enumeration>MIO 13</spirit:enumeration>
+      <spirit:enumeration>MIO 14</spirit:enumeration>
+      <spirit:enumeration>MIO 15</spirit:enumeration>
+      <spirit:enumeration>MIO 16</spirit:enumeration>
+      <spirit:enumeration>MIO 17</spirit:enumeration>
+      <spirit:enumeration>MIO 18</spirit:enumeration>
+      <spirit:enumeration>MIO 19</spirit:enumeration>
+      <spirit:enumeration>MIO 20</spirit:enumeration>
+      <spirit:enumeration>MIO 21</spirit:enumeration>
+      <spirit:enumeration>MIO 22</spirit:enumeration>
+      <spirit:enumeration>MIO 23</spirit:enumeration>
+      <spirit:enumeration>MIO 24</spirit:enumeration>
+      <spirit:enumeration>MIO 25</spirit:enumeration>
+      <spirit:enumeration>MIO 26</spirit:enumeration>
+      <spirit:enumeration>MIO 27</spirit:enumeration>
+      <spirit:enumeration>MIO 28</spirit:enumeration>
+      <spirit:enumeration>MIO 29</spirit:enumeration>
+      <spirit:enumeration>MIO 30</spirit:enumeration>
+      <spirit:enumeration>MIO 31</spirit:enumeration>
+      <spirit:enumeration>MIO 32</spirit:enumeration>
+      <spirit:enumeration>MIO 33</spirit:enumeration>
+      <spirit:enumeration>MIO 34</spirit:enumeration>
+      <spirit:enumeration>MIO 35</spirit:enumeration>
+      <spirit:enumeration>MIO 36</spirit:enumeration>
+      <spirit:enumeration>MIO 37</spirit:enumeration>
+      <spirit:enumeration>MIO 38</spirit:enumeration>
+      <spirit:enumeration>MIO 39</spirit:enumeration>
+      <spirit:enumeration>MIO 40</spirit:enumeration>
+      <spirit:enumeration>MIO 41</spirit:enumeration>
+      <spirit:enumeration>MIO 42</spirit:enumeration>
+      <spirit:enumeration>MIO 43</spirit:enumeration>
+      <spirit:enumeration>MIO 44</spirit:enumeration>
+      <spirit:enumeration>MIO 45</spirit:enumeration>
+      <spirit:enumeration>MIO 46</spirit:enumeration>
+      <spirit:enumeration>MIO 47</spirit:enumeration>
+      <spirit:enumeration>MIO 48</spirit:enumeration>
+      <spirit:enumeration>MIO 49</spirit:enumeration>
+      <spirit:enumeration>MIO 50</spirit:enumeration>
+      <spirit:enumeration>MIO 51</spirit:enumeration>
+      <spirit:enumeration>MIO 52</spirit:enumeration>
+      <spirit:enumeration>MIO 53</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_72f3e128</spirit:name>
@@ -26215,22 +26293,6 @@
       <spirit:enumeration>&lt;Select></spirit:enumeration>
       <spirit:enumeration>EMIO</spirit:enumeration>
       <spirit:enumeration>MIO 16 .. 27</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
-      <spirit:name>choice_list_88a617f1</spirit:name>
-      <spirit:enumeration>&lt;Select></spirit:enumeration>
-      <spirit:enumeration>EMIO</spirit:enumeration>
-      <spirit:enumeration>MIO 12 .. 13</spirit:enumeration>
-      <spirit:enumeration>MIO 16 .. 17</spirit:enumeration>
-      <spirit:enumeration>MIO 20 .. 21</spirit:enumeration>
-      <spirit:enumeration>MIO 24 .. 25</spirit:enumeration>
-      <spirit:enumeration>MIO 28 .. 29</spirit:enumeration>
-      <spirit:enumeration>MIO 32 .. 33</spirit:enumeration>
-      <spirit:enumeration>MIO 36 .. 37</spirit:enumeration>
-      <spirit:enumeration>MIO 40 .. 41</spirit:enumeration>
-      <spirit:enumeration>MIO 44 .. 45</spirit:enumeration>
-      <spirit:enumeration>MIO 48 .. 49</spirit:enumeration>
-      <spirit:enumeration>MIO 52 .. 53</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_88fe7673</spirit:name>
@@ -26400,65 +26462,6 @@
       <spirit:enumeration>EMIO</spirit:enumeration>
       <spirit:enumeration>MIO 10 .. 11</spirit:enumeration>
       <spirit:enumeration>MIO 22 .. 23</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
-      <spirit:name>choice_list_b3ee7919</spirit:name>
-      <spirit:enumeration>&lt;Select></spirit:enumeration>
-      <spirit:enumeration>EMIO</spirit:enumeration>
-      <spirit:enumeration>MIO 0</spirit:enumeration>
-      <spirit:enumeration>MIO 1</spirit:enumeration>
-      <spirit:enumeration>MIO 2</spirit:enumeration>
-      <spirit:enumeration>MIO 3</spirit:enumeration>
-      <spirit:enumeration>MIO 4</spirit:enumeration>
-      <spirit:enumeration>MIO 5</spirit:enumeration>
-      <spirit:enumeration>MIO 6</spirit:enumeration>
-      <spirit:enumeration>MIO 7</spirit:enumeration>
-      <spirit:enumeration>MIO 8</spirit:enumeration>
-      <spirit:enumeration>MIO 9</spirit:enumeration>
-      <spirit:enumeration>MIO 10</spirit:enumeration>
-      <spirit:enumeration>MIO 11</spirit:enumeration>
-      <spirit:enumeration>MIO 12</spirit:enumeration>
-      <spirit:enumeration>MIO 13</spirit:enumeration>
-      <spirit:enumeration>MIO 14</spirit:enumeration>
-      <spirit:enumeration>MIO 15</spirit:enumeration>
-      <spirit:enumeration>MIO 16</spirit:enumeration>
-      <spirit:enumeration>MIO 17</spirit:enumeration>
-      <spirit:enumeration>MIO 18</spirit:enumeration>
-      <spirit:enumeration>MIO 19</spirit:enumeration>
-      <spirit:enumeration>MIO 20</spirit:enumeration>
-      <spirit:enumeration>MIO 21</spirit:enumeration>
-      <spirit:enumeration>MIO 22</spirit:enumeration>
-      <spirit:enumeration>MIO 23</spirit:enumeration>
-      <spirit:enumeration>MIO 24</spirit:enumeration>
-      <spirit:enumeration>MIO 25</spirit:enumeration>
-      <spirit:enumeration>MIO 26</spirit:enumeration>
-      <spirit:enumeration>MIO 27</spirit:enumeration>
-      <spirit:enumeration>MIO 28</spirit:enumeration>
-      <spirit:enumeration>MIO 29</spirit:enumeration>
-      <spirit:enumeration>MIO 30</spirit:enumeration>
-      <spirit:enumeration>MIO 31</spirit:enumeration>
-      <spirit:enumeration>MIO 32</spirit:enumeration>
-      <spirit:enumeration>MIO 33</spirit:enumeration>
-      <spirit:enumeration>MIO 34</spirit:enumeration>
-      <spirit:enumeration>MIO 35</spirit:enumeration>
-      <spirit:enumeration>MIO 36</spirit:enumeration>
-      <spirit:enumeration>MIO 37</spirit:enumeration>
-      <spirit:enumeration>MIO 38</spirit:enumeration>
-      <spirit:enumeration>MIO 39</spirit:enumeration>
-      <spirit:enumeration>MIO 40</spirit:enumeration>
-      <spirit:enumeration>MIO 41</spirit:enumeration>
-      <spirit:enumeration>MIO 42</spirit:enumeration>
-      <spirit:enumeration>MIO 43</spirit:enumeration>
-      <spirit:enumeration>MIO 44</spirit:enumeration>
-      <spirit:enumeration>MIO 45</spirit:enumeration>
-      <spirit:enumeration>MIO 46</spirit:enumeration>
-      <spirit:enumeration>MIO 47</spirit:enumeration>
-      <spirit:enumeration>MIO 48</spirit:enumeration>
-      <spirit:enumeration>MIO 49</spirit:enumeration>
-      <spirit:enumeration>MIO 50</spirit:enumeration>
-      <spirit:enumeration>MIO 51</spirit:enumeration>
-      <spirit:enumeration>MIO 52</spirit:enumeration>
-      <spirit:enumeration>MIO 53</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_b4a6147c</spirit:name>
@@ -26767,6 +26770,21 @@
       <spirit:name>choice_list_f5e7200e</spirit:name>
       <spirit:enumeration>6</spirit:enumeration>
       <spirit:enumeration>12</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_f632ce2e</spirit:name>
+      <spirit:enumeration>EMIO</spirit:enumeration>
+      <spirit:enumeration>MIO 10 .. 11</spirit:enumeration>
+      <spirit:enumeration>MIO 14 .. 15</spirit:enumeration>
+      <spirit:enumeration>MIO 18 .. 19</spirit:enumeration>
+      <spirit:enumeration>MIO 22 .. 23</spirit:enumeration>
+      <spirit:enumeration>MIO 26 .. 27</spirit:enumeration>
+      <spirit:enumeration>MIO 30 .. 31</spirit:enumeration>
+      <spirit:enumeration>MIO 34 .. 35</spirit:enumeration>
+      <spirit:enumeration>MIO 38 .. 39</spirit:enumeration>
+      <spirit:enumeration>MIO 42 .. 43</spirit:enumeration>
+      <spirit:enumeration>MIO 46 .. 47</spirit:enumeration>
+      <spirit:enumeration>MIO 50 .. 51</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_f7022b26</spirit:name>
@@ -27205,7 +27223,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_I2C0)) = 1) ">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_I2C0)) = 1) ">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -27217,7 +27235,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_I2C0)) = 1) ">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_I2C0)) = 1) ">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -27229,7 +27247,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_I2C1)) = 1) ">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_I2C1)) = 1) ">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -27241,7 +27259,7 @@
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_I2C1)) = 1) ">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_I2C1)) = 1) ">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -28132,14 +28150,7 @@
     <spirit:parameter>
       <spirit:name>PCW_I2C_PERIPHERAL_FREQMHZ</spirit:name>
       <spirit:displayName>PCW I2C PERIPHERAL FREQMHZ</spirit:displayName>
-      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C_PERIPHERAL_FREQMHZ" spirit:order="24900" spirit:minimum="0.100000" spirit:maximum="200.000000">25</spirit:value>
-      <spirit:vendorExtensions>
-        <xilinx:parameterInfo>
-          <xilinx:enablement>
-            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.PCW_I2C_PERIPHERAL_FREQMHZ">false</xilinx:isEnabled>
-          </xilinx:enablement>
-        </xilinx:parameterInfo>
-      </spirit:vendorExtensions>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C_PERIPHERAL_FREQMHZ" spirit:order="24900" spirit:minimum="0.100000" spirit:maximum="200.000000">108.333336</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_WDT_PERIPHERAL_FREQMHZ</spirit:name>
@@ -28924,7 +28935,7 @@
     <spirit:parameter>
       <spirit:name>PCW_EN_EMIO_I2C1</spirit:name>
       <spirit:displayName>PCW EN EMIO I2C1</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_EN_EMIO_I2C1" spirit:choiceRef="choice_list_8af5a703" spirit:order="11100">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_EN_EMIO_I2C1" spirit:choiceRef="choice_list_8af5a703" spirit:order="11100">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_EN_EMIO_PJTAG</spirit:name>
@@ -29784,12 +29795,12 @@
     <spirit:parameter>
       <spirit:name>PCW_EN_I2C0</spirit:name>
       <spirit:displayName>PCW EN I2C0</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_EN_I2C0" spirit:choiceRef="choice_list_8af5a703" spirit:order="8800">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_EN_I2C0" spirit:choiceRef="choice_list_8af5a703" spirit:order="8800">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_EN_I2C1</spirit:name>
       <spirit:displayName>PCW EN I2C1</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_EN_I2C1" spirit:choiceRef="choice_list_8af5a703" spirit:order="8900">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_EN_I2C1" spirit:choiceRef="choice_list_8af5a703" spirit:order="8900">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_EN_PJTAG</spirit:name>
@@ -32005,85 +32016,43 @@
     <spirit:parameter>
       <spirit:name>PCW_I2C0_PERIPHERAL_ENABLE</spirit:name>
       <spirit:displayName>PCW I2C0 PERIPHERAL ENABLE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C0_PERIPHERAL_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="2000">0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C0_PERIPHERAL_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="2000">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_I2C0_I2C0_IO</spirit:name>
       <spirit:displayName>PCW I2C0 I2C0 IO</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C0_I2C0_IO" spirit:choiceRef="choice_list_5d0f73c4" spirit:order="6900">&lt;Select></spirit:value>
-      <spirit:vendorExtensions>
-        <xilinx:parameterInfo>
-          <xilinx:enablement>
-            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.PCW_I2C0_I2C0_IO">false</xilinx:isEnabled>
-          </xilinx:enablement>
-        </xilinx:parameterInfo>
-      </spirit:vendorExtensions>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C0_I2C0_IO" spirit:choiceRef="choice_list_f632ce2e" spirit:order="6900">MIO 14 .. 15</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_I2C0_GRP_INT_ENABLE</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C0_GRP_INT_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="6901">0</spirit:value>
-      <spirit:vendorExtensions>
-        <xilinx:parameterInfo>
-          <xilinx:enablement>
-            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.PCW_I2C0_GRP_INT_ENABLE">false</xilinx:isEnabled>
-          </xilinx:enablement>
-        </xilinx:parameterInfo>
-      </spirit:vendorExtensions>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C0_GRP_INT_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="6901">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_I2C0_GRP_INT_IO</spirit:name>
       <spirit:displayName>PCW I2C0 GRP INT IO</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C0_GRP_INT_IO" spirit:choiceRef="choice_list_b3ee7919" spirit:order="6902">&lt;Select></spirit:value>
-      <spirit:vendorExtensions>
-        <xilinx:parameterInfo>
-          <xilinx:enablement>
-            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.PCW_I2C0_GRP_INT_IO">false</xilinx:isEnabled>
-          </xilinx:enablement>
-        </xilinx:parameterInfo>
-      </spirit:vendorExtensions>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C0_GRP_INT_IO" spirit:choiceRef="choice_list_727c50f2" spirit:order="6902">EMIO</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_I2C0_RESET_ENABLE</spirit:name>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C0_RESET_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="6903">0</spirit:value>
-      <spirit:vendorExtensions>
-        <xilinx:parameterInfo>
-          <xilinx:enablement>
-            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.PCW_I2C0_RESET_ENABLE">false</xilinx:isEnabled>
-          </xilinx:enablement>
-        </xilinx:parameterInfo>
-      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_I2C0_RESET_IO</spirit:name>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C0_RESET_IO" spirit:choiceRef="choice_list_d679c87d" spirit:order="6904">&lt;Select></spirit:value>
-      <spirit:vendorExtensions>
-        <xilinx:parameterInfo>
-          <xilinx:enablement>
-            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.PCW_I2C0_RESET_IO">false</xilinx:isEnabled>
-          </xilinx:enablement>
-        </xilinx:parameterInfo>
-      </spirit:vendorExtensions>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_I2C1_PERIPHERAL_ENABLE</spirit:name>
       <spirit:displayName>PCW I2C1 PERIPHERAL ENABLE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C1_PERIPHERAL_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="2100">0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C1_PERIPHERAL_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="2100">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_I2C1_I2C1_IO</spirit:name>
       <spirit:displayName>PCW I2C1 I2C1 IO</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C1_I2C1_IO" spirit:choiceRef="choice_list_88a617f1" spirit:order="7000">&lt;Select></spirit:value>
-      <spirit:vendorExtensions>
-        <xilinx:parameterInfo>
-          <xilinx:enablement>
-            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.PCW_I2C1_I2C1_IO">false</xilinx:isEnabled>
-          </xilinx:enablement>
-        </xilinx:parameterInfo>
-      </spirit:vendorExtensions>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C1_I2C1_IO" spirit:choiceRef="choice_list_239baa1b" spirit:order="7000">EMIO</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_I2C1_GRP_INT_ENABLE</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C1_GRP_INT_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="7001">0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C1_GRP_INT_ENABLE" spirit:choiceRef="choice_list_8af5a703" spirit:order="7001">1</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -32095,7 +32064,7 @@
     <spirit:parameter>
       <spirit:name>PCW_I2C1_GRP_INT_IO</spirit:name>
       <spirit:displayName>PCW I2C1 GRP INT IO</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C1_GRP_INT_IO" spirit:choiceRef="choice_list_b3ee7919" spirit:order="7002">&lt;Select></spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C1_GRP_INT_IO" spirit:choiceRef="choice_list_727c50f2" spirit:order="7002">EMIO</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -32110,14 +32079,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_I2C_RESET_SELECT</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C_RESET_SELECT" spirit:choiceRef="choice_list_fe5d5471" spirit:order="6103">&lt;Select></spirit:value>
-      <spirit:vendorExtensions>
-        <xilinx:parameterInfo>
-          <xilinx:enablement>
-            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.PCW_I2C_RESET_SELECT">false</xilinx:isEnabled>
-          </xilinx:enablement>
-        </xilinx:parameterInfo>
-      </spirit:vendorExtensions>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_I2C_RESET_SELECT" spirit:choiceRef="choice_list_6885bca1" spirit:order="6103">Share reset pin</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_I2C1_RESET_ENABLE</spirit:name>
@@ -33866,12 +33828,12 @@
     <spirit:parameter>
       <spirit:name>PCW_MIO_TREE_PERIPHERALS</spirit:name>
       <spirit:displayName>PCW MIO TREE PERIPHERALS</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_TREE_PERIPHERALS" spirit:order="210000">GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#UART 1#UART 1#GPIO#GPIO#GPIO#GPIO</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_TREE_PERIPHERALS" spirit:order="210000">GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#I2C 0#I2C 0#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#GPIO#UART 1#UART 1#GPIO#GPIO#GPIO#GPIO</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_MIO_TREE_SIGNALS</spirit:name>
       <spirit:displayName>PCW MIO TREE SIGNALS</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_TREE_SIGNALS" spirit:order="220000">gpio[0]#gpio[1]#gpio[2]#gpio[3]#gpio[4]#gpio[5]#gpio[6]#gpio[7]#gpio[8]#gpio[9]#gpio[10]#gpio[11]#gpio[12]#gpio[13]#gpio[14]#gpio[15]#gpio[16]#gpio[17]#gpio[18]#gpio[19]#gpio[20]#gpio[21]#gpio[22]#gpio[23]#gpio[24]#gpio[25]#gpio[26]#gpio[27]#gpio[28]#gpio[29]#gpio[30]#gpio[31]#gpio[32]#gpio[33]#gpio[34]#gpio[35]#gpio[36]#gpio[37]#gpio[38]#gpio[39]#gpio[40]#gpio[41]#gpio[42]#gpio[43]#gpio[44]#gpio[45]#gpio[46]#gpio[47]#tx#rx#gpio[50]#gpio[51]#gpio[52]#gpio[53]</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PCW_MIO_TREE_SIGNALS" spirit:order="220000">gpio[0]#gpio[1]#gpio[2]#gpio[3]#gpio[4]#gpio[5]#gpio[6]#gpio[7]#gpio[8]#gpio[9]#gpio[10]#gpio[11]#gpio[12]#gpio[13]#scl#sda#gpio[16]#gpio[17]#gpio[18]#gpio[19]#gpio[20]#gpio[21]#gpio[22]#gpio[23]#gpio[24]#gpio[25]#gpio[26]#gpio[27]#gpio[28]#gpio[29]#gpio[30]#gpio[31]#gpio[32]#gpio[33]#gpio[34]#gpio[35]#gpio[36]#gpio[37]#gpio[38]#gpio[39]#gpio[40]#gpio[41]#gpio[42]#gpio[43]#gpio[44]#gpio[45]#gpio[46]#gpio[47]#tx#rx#gpio[50]#gpio[51]#gpio[52]#gpio[53]</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PCW_PS7_SI_REV</spirit:name>
@@ -34189,6 +34151,9 @@
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_ENET0_RESET_ENABLE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_FPGA0_PERIPHERAL_FREQMHZ" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_GPIO_MIO_GPIO_ENABLE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_I2C0_I2C0_IO" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_I2C0_PERIPHERAL_ENABLE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_I2C1_PERIPHERAL_ENABLE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_MIO_0_PULLUP" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_MIO_10_PULLUP" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PCW_MIO_11_PULLUP" xilinx:valueSource="user"/>

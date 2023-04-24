@@ -1,8 +1,8 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-//Date        : Sun Apr 23 17:20:48 2023
-//Host        : RHIT-R90VM7WS running 64-bit major release  (build 9200)
+//Date        : Mon Apr 24 13:43:22 2023
+//Host        : DESKTOP-EG61PQH running 64-bit major release  (build 9200)
 //Command     : generate_target LEDcounter_scutimer_interrupt_wrapper.bd
 //Design      : LEDcounter_scutimer_interrupt_wrapper
 //Purpose     : IP block netlist
@@ -31,6 +31,8 @@ module LEDcounter_scutimer_interrupt_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
+    iic_1_scl_io,
+    iic_1_sda_io,
     leds_tri_o,
     tx);
   inout [14:0]DDR_addr;
@@ -54,6 +56,8 @@ module LEDcounter_scutimer_interrupt_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
+  inout iic_1_scl_io;
+  inout iic_1_sda_io;
   output [3:0]leds_tri_o;
   output tx;
 
@@ -78,6 +82,14 @@ module LEDcounter_scutimer_interrupt_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
+  wire iic_1_scl_i;
+  wire iic_1_scl_io;
+  wire iic_1_scl_o;
+  wire iic_1_scl_t;
+  wire iic_1_sda_i;
+  wire iic_1_sda_io;
+  wire iic_1_sda_o;
+  wire iic_1_sda_t;
   wire [3:0]leds_tri_o;
   wire tx;
 
@@ -103,6 +115,22 @@ module LEDcounter_scutimer_interrupt_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
+        .IIC_1_scl_i(iic_1_scl_i),
+        .IIC_1_scl_o(iic_1_scl_o),
+        .IIC_1_scl_t(iic_1_scl_t),
+        .IIC_1_sda_i(iic_1_sda_i),
+        .IIC_1_sda_o(iic_1_sda_o),
+        .IIC_1_sda_t(iic_1_sda_t),
         .LEDs_tri_o(leds_tri_o),
         .tx(tx));
+  IOBUF iic_1_scl_iobuf
+       (.I(iic_1_scl_o),
+        .IO(iic_1_scl_io),
+        .O(iic_1_scl_i),
+        .T(iic_1_scl_t));
+  IOBUF iic_1_sda_iobuf
+       (.I(iic_1_sda_o),
+        .IO(iic_1_sda_io),
+        .O(iic_1_sda_i),
+        .T(iic_1_sda_t));
 endmodule
