@@ -10,45 +10,47 @@
 #include "scutimer_interrupt_subroutines.h"
 
 #define ENDCOUNT 200
-volatile int TimerCount=0;
+volatile int TimerCount = 0;
 
-int interrupt_main(void)
-{
+int interrupt_main(void) {
     int Status;
 
     printf("SCU Timer Interrupt Counter Example\r\n");
     // Initialize LEDs
     Status = SetupLEDs(&LEDInst, LEDS_DEVICE_ID);
-    if(Status != XST_SUCCESS) return XST_FAILURE;
+    if (Status != XST_SUCCESS) return XST_FAILURE;
 
     Status = SetupScuTimer(&TimerInstance, TIMER_DEVICE_ID, TIMER_LOAD_VALUE, TIMER_IRPT_INTR);
     if (Status != XST_SUCCESS) {
         xil_printf("SCU Timer Enable Failed\r\n");
-        return XST_FAILURE;     }
+        return XST_FAILURE;
+    }
 
     Status = SetupGIC(&GICinstance, GIC_DEVICE_ID,
                       &TimerInstance, TIMER_IRPT_INTR);
     if (Status != XST_SUCCESS) {
         xil_printf("SCU Timer Interrupt Example Test Failed\r\n");
-        return XST_FAILURE;     }
+        return XST_FAILURE;
+    }
 
     while (1) {
         if (TimerCount == ENDCOUNT) {
             XScuTimer_Stop(&TimerInstance);
-            break;    }
+            break;
+        }
     }
 // Disconnect and disable the interrupt for the Timer.
     XScuGic_Disconnect(&GICinstance, TIMER_IRPT_INTR);
 
     xil_printf("\r\nSCU Timer Interrupt counter Example Is Successful!\r\n");
     return XST_SUCCESS;
-}	//end main()
+}    //end main()
 
 int SetupLEDs(XGpio *LEDdevice, int DeviceID) {
     int status;
     // Initialize LEDs
     status = XGpio_Initialize(LEDdevice, DeviceID);
-    if(status != XST_SUCCESS) return XST_FAILURE;
+    if (status != XST_SUCCESS) return XST_FAILURE;
     // Set LEDs direction to outputs
     XGpio_SetDataDirection(&LEDInst, 1, 0x00);
     return XST_SUCCESS;
@@ -93,8 +95,7 @@ int SetupScuTimer(XScuTimer *Timer, u16 timer_ID, unsigned int Load_value, u16 t
 * @return	XST_SUCCESS if successful, otherwise XST_FAILURE.
 * @note		None.
 ******************************************************************************/
-int SetupGIC(XScuGic *IntcInstancePtr, u16 gic_id, XScuTimer *TimerInstancePtr, u16 TimerIntrId)
-{
+int SetupGIC(XScuGic *IntcInstancePtr, u16 gic_id, XScuTimer *TimerInstancePtr, u16 TimerIntrId) {
     int Status;
 
     XScuGic_Config *IntcConfig;
@@ -111,8 +112,8 @@ int SetupGIC(XScuGic *IntcInstancePtr, u16 gic_id, XScuTimer *TimerInstancePtr, 
 //interrupt for the device occurs, the handler defined above performs
 // the specific interrupt processing for the device.
     Status = XScuGic_Connect(IntcInstancePtr, TimerIntrId,
-                             (Xil_ExceptionHandler)TimerIntrHandler, (void *)TimerInstancePtr);
-    if (Status != XST_SUCCESS)  return Status;
+                             (Xil_ExceptionHandler) TimerIntrHandler, (void *) TimerInstancePtr);
+    if (Status != XST_SUCCESS) return Status;
 //Level 1: to tie interrupt to an ARM CPU
 //Enable the interrupt for the device.
     XScuGic_Enable(IntcInstancePtr, TimerIntrId);
@@ -120,14 +121,14 @@ int SetupGIC(XScuGic *IntcInstancePtr, u16 gic_id, XScuTimer *TimerInstancePtr, 
 // Connect the interrupt controller interrupt handler to the hardware
 //interrupt handling logic in the processor.
     Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_IRQ_INT,
-                                 (Xil_ExceptionHandler)XScuGic_InterruptHandler, IntcInstancePtr);
+                                 (Xil_ExceptionHandler) XScuGic_InterruptHandler, IntcInstancePtr);
     /*
      * Enable interrupts in the Processor.
      */
     Xil_ExceptionEnable();
 
     return XST_SUCCESS;
-}	//end SetupGIC()
+}    //end SetupGIC()
 
 /***************************************************************/
 /*
@@ -142,8 +143,7 @@ int SetupGIC(XScuGic *IntcInstancePtr, u16 gic_id, XScuTimer *TimerInstancePtr, 
 * @note		None.
 *
 ****************************************************************/
-void TimerIntrHandler(void *CallBackRef)
-{
+void TimerIntrHandler(void *CallBackRef) {
     //CallBackRef was initialized to be pointer to Timer instance
     XScuTimer *TimerInstancePtr = (XScuTimer *) CallBackRef;
 
@@ -156,9 +156,9 @@ void TimerIntrHandler(void *CallBackRef)
      */
     if (XScuTimer_IsExpired(TimerInstancePtr)) {
         XScuTimer_ClearInterruptStatus(TimerInstancePtr);
-        TimerCount = TimerCount+1;
+        TimerCount = TimerCount + 1;
         XGpio_DiscreteWrite(&LEDInst, 1, TimerCount);
         xil_printf("\r\nTimerCount = %d", TimerCount);
     }
-}	//end TimerIntrHandler()
+}    //end TimerIntrHandler()
 

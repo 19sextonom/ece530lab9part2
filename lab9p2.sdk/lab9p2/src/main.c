@@ -148,19 +148,20 @@ int ReadTemperature(XIicPs *i2cInstance, float *temperature, int i2cAddress, int
     u8 temp[2] = {0x00, 0x00};    // 2 byte temperature
     // set pointer back to 0x00 to point to the temperature value
     if (XIicPs_MasterSendPolled(i2cInstance, temp, 1, i2cAddress) == XST_FAILURE) {
-    	printf("-- Setting pointer to 0x00\r\n");
+        printf("-- Setting pointer to 0x00\r\n");
         return XST_FAILURE;
     }
 
     // TO DONE: Read temperature. Return XST_FAILURE if failed
     if (XIicPs_MasterRecvPolled(i2cInstance, temp, BUFFER_SIZE, i2cAddress) == XST_FAILURE) {
-    	printf("-- Reading from device Failed\r\n");
-    	return XST_FAILURE;
+        printf("-- Reading from device Failed\r\n");
+        return XST_FAILURE;
     }
 
     // TO DONE: Convert temperature to floating number
     // NOTE: IDK if I did this right. Not sure I understand how the data is coming in
-    *temperature = (float) temp[0] + (temp[1] >> 4)/16.0;// & 1)/2.0 + ((temp[1] >> 6) & 1)/4.0 + ((temp[1] >> 5) & 1)/8.0 + ((temp[1] >> 4) & 1)/16.0;
+    *temperature = (float) temp[0] + (temp[1] >> 4) /
+                                     16.0;// & 1)/2.0 + ((temp[1] >> 6) & 1)/4.0 + ((temp[1] >> 5) & 1)/8.0 + ((temp[1] >> 4) & 1)/16.0;
     // + (0x80 && temp[1]) / 2; + (0x40 & temp[1])/4 + (0x20 & temp[1])/8 + (0x10 & temp[1])/16 ;
 //    u8 *temp_ptr = (u8 *) temperature;
 //    temp_ptr[1] = temp[0];
@@ -206,13 +207,13 @@ int main() {
         printf("in loop\r\n");
 
         // TO DONE: Read tmp101 board and calculate temperature value on PS port
-        if (ReadTemperature(&i2cPs, &tempPs, PS_TMP101_ADDRESS, PS_TMP101_RESOLUTION) == XST_FAILURE){
-        	printf("Failed to read TMP101 from PS on bottom row of Connector JF.\r\n");
+        if (ReadTemperature(&i2cPs, &tempPs, PS_TMP101_ADDRESS, PS_TMP101_RESOLUTION) == XST_FAILURE) {
+            printf("Failed to read TMP101 from PS on bottom row of Connector JF.\r\n");
         }
 
         // TO DONE: Read tmp101 board and calculate temperature value on PL port
-        if (ReadTemperature(&i2cPl, &tempPl, PL_TMP101_ADDRESS, PL_TMP101_RESOLUTION) == XST_FAILURE){
-        	printf("Failed to read TMP101 from PL on top row of Connector JB.\r\n");
+        if (ReadTemperature(&i2cPl, &tempPl, PL_TMP101_ADDRESS, PL_TMP101_RESOLUTION) == XST_FAILURE) {
+            printf("Failed to read TMP101 from PL on top row of Connector JB.\r\n");
         }
 
         // TO DONE: Display temperature in floating point number with 4 digits after decimal point
